@@ -108,6 +108,8 @@ const getYear = (dateStr) => {
                 align-items: flex-end;
                 justify-content: center;
                 z-index: 0;
+                transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+                transform-origin: bottom center;
             }
             
             #hero-text-container {
@@ -210,6 +212,38 @@ const getYear = (dateStr) => {
             .year-card:hover {
                 transform: translateY(-12px);
                 box-shadow: 0 25px 50px -12px rgba(74, 66, 56, 0.15);
+            }
+
+            /* Mobile Overrides */
+            @media (max-width: 768px) {
+                #hero-wrapper {
+                    width: 100vw;
+                    transform: translate(-50%, -5vh) scale(1);
+                }
+                body.hero-scrolled #hero-wrapper {
+                    transform: translate(-50%, -15vh) scale(1);
+                }
+                
+                #hero-title {
+                    font-size: 45px;
+                    margin-bottom: 10px;
+                }
+                .hero-subtitle {
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                    letter-spacing: 0.2em;
+                }
+                
+                #hero-image-container {
+                    width: 250vw;
+                    left: 50%;
+                    margin-left: -125vw;
+                    bottom: 180px;
+                    transform: scale(1);
+                }
+                body.hero-scrolled #hero-image-container {
+                    transform: scale(0.4);
+                }
             }
         </style>
 	</head>
