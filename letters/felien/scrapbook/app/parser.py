@@ -59,19 +59,20 @@ def parse_whatsapp_chat(file_path):
                 if line:
                     current_message['text'] += '\n' + line
 
-    # Group messages by day
-    events_by_day = {}
+    # Group messages by month
+    events_by_month = {}
     for msg in messages:
         # Skip system messages
         if msg['sender'] == 'Felien Fan Club' or "Messages and calls are end-to-end encrypted" in msg['text']:
             continue
             
-        day = msg['date']
-        if day not in events_by_day:
-            events_by_day[day] = []
-        events_by_day[day].append(msg)
+        # Extract YYYY-MM from YYYY-MM-DD
+        month = msg['date'][:7]
+        if month not in events_by_month:
+            events_by_month[month] = []
+        events_by_month[month].append(msg)
 
-    return events_by_day
+    return events_by_month
 
 if __name__ == "__main__":
     chat_file = "../../whatsapp_export/20260318_export/_chat.txt"
@@ -81,4 +82,4 @@ if __name__ == "__main__":
     with open("parsed_chat.json", "w", encoding='utf-8') as f:
         json.dump(events, f, indent=2, ensure_ascii=False)
     
-    print(f"Parsed {sum(len(msgs) for msgs in events.values())} messages across {len(events)} days.")
+    print(f"Parsed {sum(len(msgs) for msgs in events.values())} messages across {len(events)} months.")

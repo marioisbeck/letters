@@ -63,4 +63,4 @@ Rendering:
 
 4. Save the resulting image into the `line_art_images` directory with the exact same base name as the original image (e.g., if the input is `raw_images/portrait.jpg`, the output should be `line_art_images/portrait.png`).
 5. Inform the user that the conversion is complete.
-6. Remind the user that they can add these images to their letter using the `./add_line_art.py` script, which will automatically extract the image contour and wrap the text around the line art. For example: `./add_line_art.py letters/my_letter.typ line_art_images/portrait.png`
+6. Remind the user that they can add these images to their letter using the `scripts/add_line_art.py` script, which will automatically wrap the text around the line art. For example: `python scripts/add_line_art.py letters/my_letter.typ line_art_images/portrait.png`

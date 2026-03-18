@@ -1,0 +1,523 @@
+---
+import { getCollection, render } from 'astro:content';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+    return [
+        { params: { year: '1' } },
+        { params: { year: '2' } },
+        { params: { year: '3' } },
+    ];
+}
+
+const { year } = Astro.params;
+const yearNum = parseInt(year);
+
+// Fetch all timeline entries and sort by date
+const timelineEntries = await getCollection('timeline');
+timelineEntries.sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime());
+
+// Filter by year
+const getYear = (dateStr) => {
+    const date = new Date(dateStr);
+    const y = date.getFullYear();
+    const m = date.getMonth() + 1; // 1-12
+    
+    // If it's before Nov 2024, it's Year 1
+    if (y === 2023 || (y === 2024 && m < 11)) return 1;
+    if ((y === 2024 && m >= 11) || (y === 2025 && m < 11)) return 2;
+    if ((y === 2025 && m >= 11) || (y === 2026 && m < 11)) return 3;
+    return 4;
+};
+
+const filteredEntries = timelineEntries.filter(entry => getYear(entry.data.date) === yearNum);
+
+const renderedEntries = await Promise.all(
+    filteredEntries.map(async (entry) => {
+        const { Content } = await render(entry);
+        return { entry, Content };
+    })
+);
+
+const yearData = {
+    1: {
+        title: "2023 - 2024",
+        image: "/line_art/IMG_9021_transparent.png",
+        description: "Die Ankunft, das erste Lächeln, die ersten Schritte in eine neue Welt. Willkommen in der Familie Beck."
+    },
+    2: {
+        title: "2024 - 2025",
+        image: "/line_art/IMG_9804_transparent.png",
+        description: "Erste Worte, neue Entdeckungen und ganz viel Persönlichkeit."
+    },
+    3: {
+        title: "2025 - Heute",
+        image: "/line_art/88C82000-977D-4C10-A435-DD0A1A770095_transparent.png",
+        description: "Jeden Tag ein neues Abenteuer."
+    }
+};
+
+const currentYearData = yearData[yearNum];
+---
+
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/media/98010eb2-f01a-475f-ada1-b4d37980d38f_transparent.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <title>{currentYearData.title} | Feliens Welt</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #faf9f6;
+                color: #2c2c2c;
+            }
+            .serif-font {
+                font-family: 'Playfair Display', serif;
+            }
+            
+            /* Snap scrolling container */
+            .snap-container {
+                height: 100vh;
+                overflow-y: auto;
+                scroll-snap-type: y mandatory;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .snap-section {
+                height: 100vh;
+                scroll-snap-align: start;
+                scroll-snap-stop: always;
+            }
+
+            /* Custom scrollbar */
+            ::-webkit-scrollbar {
+                width: 8px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #faf9f6;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #e2d5c5;
+                border-radius: 4px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #cbbba6;
+            }
+            
+            /* Polaroid effect */
+            .polaroid {
+                background: white;
+                padding: 12px 12px 40px 12px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.05), 0 4px 10px rgba(0,0,0,0.03);
+                border: 1px solid #f0f0f0;
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+            .polaroid:hover {
+                transform: scale(1.02) rotate(0deg) !important;
+                z-index: 50;
+            }
+            
+            /* Hide scrollbar for carousel */
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .no-scrollbar {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+            
+            /* Horizontal wheel scrolling utility */
+            .wheel-scroll {
+                overscroll-behavior-x: contain;
+            }
+        </style>
+	</head>
+	<body class="antialiased overflow-hidden">
+        
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-[#faf9f6]/90 backdrop-blur-md border-b border-[#f0eadd] px-6 py-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <a href="/" class="text-[#a89f91] hover:text-[#4a4238] transition-colors flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Zurück zur Übersicht
+                </a>
+                <h1 class="serif-font italic text-xl text-[#4a4238]">{currentYearData.title}</h1>
+            </div>
+        </nav>
+
+        <div class="snap-container pt-16 relative" id="main-scroll-container">
+            <!-- Navigation Controls -->
+            <div class="fixed right-6 bottom-8 z-40 flex flex-col gap-3">
+                <button id="nav-up" class="bg-[#faf9f6]/80 backdrop-blur-sm p-3 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:-translate-y-1 disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Previous section">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+                </button>
+                <button id="nav-down" class="bg-[#faf9f6]/80 backdrop-blur-sm p-3 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:translate-y-1 disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Next section">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+            </div>
+            
+            <!-- Year Navigation Controls -->
+            {yearNum > 1 && (
+                <a href={`/year/${yearNum - 1}`} class="fixed left-4 md:left-8 top-1/2 -translate-y-1/2 z-40 bg-[#faf9f6]/80 backdrop-blur-sm p-3 md:p-4 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:-translate-x-1 flex items-center justify-center group" title="Vorheriges Jahr">
+                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="absolute left-full ml-2 bg-white px-2 py-1 rounded text-xs font-medium text-[#4a4238] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-sm border border-[#f0eadd] hidden md:block">Jahr {yearNum - 1}</span>
+                </a>
+            )}
+            {yearNum < 3 && (
+                <a href={`/year/${yearNum + 1}`} class="fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-40 bg-[#faf9f6]/80 backdrop-blur-sm p-3 md:p-4 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:translate-x-1 flex items-center justify-center group" title="Nächstes Jahr">
+                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="absolute right-full mr-2 bg-white px-2 py-1 rounded text-xs font-medium text-[#4a4238] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-sm border border-[#f0eadd] hidden md:block">Jahr {yearNum + 1}</span>
+                </a>
+            )}
+
+            <!-- Intro Section -->
+            <section class="snap-section relative w-full h-[calc(100vh-4rem)] flex flex-col items-center justify-center overflow-hidden bg-[#faf9f6] pt-8 pb-8">
+                <!-- Background Image -->
+                <div class="relative z-0 flex-grow flex items-center justify-center w-full min-h-0 -mb-24 md:-mb-32">
+                    <img src={currentYearData.image} alt="Background" class="max-w-2xl w-full h-full object-contain opacity-90 p-4" />
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#faf9f6] pointer-events-none"></div>
+                </div>
+                
+                <div class="z-10 text-center px-4 flex-shrink-0 mt-2">
+                    <h1 class="text-5xl md:text-7xl font-bold text-[#4a4238] mb-4 serif-font italic">{currentYearData.title}</h1>
+                    <h2 class="text-sm md:text-base tracking-[0.2em] text-[#4a4238] uppercase mb-6 max-w-2xl mx-auto leading-relaxed">{currentYearData.description}</h2>
+                    
+                    <div class="animate-bounce">
+                        <svg class="w-6 h-6 text-[#a89f91] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            {renderedEntries.length === 0 ? (
+                <section class="snap-section flex items-center justify-center">
+                    <div class="text-center py-20 text-[#a89f91] serif-font italic text-2xl">
+                        Noch keine Erinnerungen für dieses Jahr.
+                    </div>
+                </section>
+            ) : (
+                renderedEntries.map(({ entry, Content }, index) => {
+                    const isLetter = entry.data.type === 'letter';
+                    const dateObj = new Date(entry.data.date);
+                    const monthName = dateObj.toLocaleDateString('de-DE', { month: 'long', year: 'numeric' });
+                    const mediaCount = entry.data.media ? entry.data.media.length : 0;
+                    const isEven = index % 2 === 0;
+                    
+                    return (
+                        <section class={`snap-section w-full flex items-center justify-center p-8 md:p-16 ${isLetter ? 'bg-[#f4f1ea]' : 'bg-[#faf9f6]'}`}>
+                            <div class={`max-w-7xl w-full h-full max-h-[85vh] flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 md:gap-24 items-center`}>
+                                
+                                <!-- Content Side -->
+                                <div class="w-full md:w-1/2 h-full flex flex-col justify-center overflow-y-auto pr-4 pb-8">
+                                    <div class="sticky top-0 bg-inherit pt-4 pb-6 z-10">
+                                        <div class="text-sm font-medium tracking-[0.2em] text-[#b3a89a] uppercase mb-3">
+                                            {isLetter ? 'Geburtstagsbrief' : monthName}
+                                        </div>
+                                        <h2 class={`text-3xl md:text-4xl mb-6 text-[#3d362e] ${isLetter ? 'serif-font italic' : 'font-semibold'}`}>
+                                            {entry.data.title}
+                                        </h2>
+                                        <div class="w-12 h-1 bg-[#dcd3c6] mb-8"></div>
+                                    </div>
+                                    
+                                    <div class={`prose prose-base max-w-none prose-headings:serif-font prose-headings:text-[#4a4238] prose-p:text-[#5a5248] prose-p:leading-relaxed ${isLetter ? 'serif-font text-lg' : 'text-[0.95rem]'}`}>
+                                        <Content />
+                                    </div>
+                                </div>
+                                
+                                <!-- Media Side -->
+                                <div class="w-full md:w-1/2 h-full flex items-center justify-center relative min-h-[40vh] pointer-events-auto" style="touch-action: pan-x;">
+                                    {mediaCount > 0 && (
+                                        <div class="w-full relative carousel-wrapper group/carousel">
+                                            {/* Left Navigation Button */}
+                                            {mediaCount > 1 && (
+                                                <button class="carousel-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg text-[#a89f91] hover:text-[#4a4238] transition-all transform hover:scale-110 opacity-0 group-hover/carousel:opacity-100 md:-ml-4 focus:opacity-100" aria-label="Previous image">
+                                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                                </button>
+                                            )}
+
+                                            {/* Carousel Container */}
+                                            <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 pt-4 px-4 no-scrollbar pointer-events-auto carousel-scroll-area" style="overscroll-behavior-x: contain;">
+                                                {entry.data.media.map((mediaFile, mIndex) => {
+                                                    const isVideo = mediaFile.toLowerCase().endsWith('.mp4') || mediaFile.toLowerCase().endsWith('.mov');
+                                                    const mediaPath = `/media/${mediaFile}`;
+                                                    const rotations = ['-rotate-2', 'rotate-1', '-rotate-1', 'rotate-2'];
+                                                    const rotation = rotations[mIndex % rotations.length];
+                                                    
+                                                    // Show 2 items at a time by adjusting width
+                                                    return (
+                                                        <div class={`snap-center shrink-0 w-[45%] min-w-[200px] max-w-[280px] polaroid ${rotation} pointer-events-auto`} 
+                                                             data-src={mediaPath} data-type={isVideo ? 'video' : 'image'}>
+                                                        {isVideo ? (
+                                                                <div class="relative pointer-events-none">
+                                                                    <video class="w-full h-64 object-cover bg-gray-100 pointer-events-none">
+                                                                        <source src={mediaPath} type={`video/${mediaFile.split('.').pop()}`} />
+                                                                    </video>
+                                                                    <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors pointer-events-none">
+                                                                        <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                                                                    </div>
+                                                                </div>
+                                                            ) : (
+                                                                <img src={mediaPath} alt="Memory" class="w-full h-64 object-cover bg-gray-100 pointer-events-none" loading="lazy" />
+                                                            )}
+                                                        </div>
+                                                    );
+                                                })}
+                                            </div>
+                                            
+                                            {/* Right Navigation Button */}
+                                            {mediaCount > 1 && (
+                                                <button class="carousel-next absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg text-[#a89f91] hover:text-[#4a4238] transition-all transform hover:scale-110 opacity-0 group-hover/carousel:opacity-100 md:-mr-4 focus:opacity-100" aria-label="Next image">
+                                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                                </button>
+                                            )}
+                                            
+                                            {/* Swipe Indicator */}
+                                            {mediaCount > 1 && (
+                                                <div class="absolute bottom-0 left-0 right-0 flex justify-center gap-2 pointer-events-none">
+                                                    <div class="flex gap-1">
+                                                        {entry.data.media.map((_, i) => (
+                                                            <div class="w-1.5 h-1.5 rounded-full bg-[#dcd3c6]"></div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    )}
+                                </div>
+                                
+                            </div>
+                        </section>
+                    );
+                })
+            )}
+            
+            <section class="flex flex-col items-center justify-center text-center px-4 bg-[#4a4238] text-[#f4f1ea] relative overflow-hidden h-[35vh] min-h-[35vh]" style="scroll-snap-align: start; scroll-snap-stop: always;">
+                <!-- Decorative Line Art -->
+                <img src="/line_art/emoji_heart.png" class="absolute top-8 left-8 w-16 h-16 opacity-10 -rotate-12" alt="Heart" />
+                <img src="/media/98010eb2-f01a-475f-ada1-b4d37980d38f_transparent.png" class="absolute bottom-0 right-0 h-48 w-auto object-contain opacity-10 rotate-6 translate-y-4 translate-x-4" style="filter: brightness(0) invert(1);" alt="Decoration" />
+                
+                <div class="max-w-2xl mx-auto z-10">
+                    <h2 class="text-3xl md:text-4xl serif-font italic mb-6 text-[#e2d5c5]">Fortsetzung folgt...</h2>
+                    
+                    <div class="relative py-6 px-6">
+                        <div class="absolute top-0 left-1/2 w-12 h-px bg-[#a89f91] -translate-x-1/2"></div>
+                        <p class="text-base md:text-lg font-light leading-relaxed italic text-[#cbbba6]">
+                            "Wir freuen uns auf all die Abenteuer, die vor uns liegen. Es gibt noch so viel zusammen zu entdecken, zu lernen und gemeinsam zu erleben. Wir können es kaum erwarten, zu sehen, wie du weiter die Welt erkundest."
+                        </p>
+                        <div class="absolute bottom-0 left-1/2 w-12 h-px bg-[#a89f91] -translate-x-1/2"></div>
+                    </div>
+                    
+                    <p class="mt-6 text-xs tracking-widest uppercase text-[#a89f91]">Mama & Papa</p>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Fullscreen Modal (Vanilla JS) -->
+        <div id="media-modal" class="hidden fixed inset-0 z-[100] items-center justify-center bg-black/90 backdrop-blur-sm p-4 md:p-12 transition-opacity duration-300">
+            
+            <!-- Controls Container -->
+            <div class="absolute top-6 right-6 flex items-center gap-4 z-50">
+                <!-- Rotate Button -->
+                <button id="modal-rotate" class="text-white hover:text-gray-300 transition-colors bg-black/50 p-2 rounded-full backdrop-blur-md" title="Rotate 90°">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                </button>
+                
+                <!-- Close Button -->
+                <button id="modal-close" class="text-white hover:text-gray-300 transition-colors bg-black/50 p-2 rounded-full backdrop-blur-md" title="Close (Esc)">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="modal-content-wrapper" class="relative w-full h-full flex items-center justify-center overflow-hidden">
+                <img id="modal-img" src="" class="hidden max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-transform duration-300" />
+                <video id="modal-video" controls class="hidden max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-transform duration-300">
+                    <source id="modal-video-src" src="" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const modal = document.getElementById('media-modal');
+                const modalImg = document.getElementById('modal-img');
+                const modalVideo = document.getElementById('modal-video');
+                const modalVideoSrc = document.getElementById('modal-video-src');
+                const closeBtn = document.getElementById('modal-close');
+                const rotateBtn = document.getElementById('modal-rotate');
+                const contentWrapper = document.getElementById('modal-content-wrapper');
+                
+                let currentRotation = 0;
+                let currentMediaElement = null;
+
+                const applyRotation = () => {
+                    if (currentMediaElement) {
+                        currentMediaElement.style.transform = `rotate(${currentRotation}deg)`;
+                        
+                        // Adjust max dimensions based on rotation to prevent clipping
+                        if (currentRotation % 180 !== 0) {
+                            // When rotated 90 or 270 degrees, swap max-width and max-height logic
+                            currentMediaElement.style.maxWidth = '90vh';
+                            currentMediaElement.style.maxHeight = '90vw';
+                        } else {
+                            currentMediaElement.style.maxWidth = '100%';
+                            currentMediaElement.style.maxHeight = '100%';
+                        }
+                    }
+                };
+
+                rotateBtn.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevent modal close
+                    currentRotation = (currentRotation + 90) % 360;
+                    applyRotation();
+                });
+
+                document.querySelectorAll('.polaroid').forEach(el => {
+                    el.addEventListener('click', () => {
+                        const src = el.getAttribute('data-src');
+                        const type = el.getAttribute('data-type');
+                        
+                        // Reset rotation
+                        currentRotation = 0;
+                        modalImg.style.transform = 'rotate(0deg)';
+                        modalVideo.style.transform = 'rotate(0deg)';
+                        modalImg.style.maxWidth = '100%';
+                        modalImg.style.maxHeight = '100%';
+                        modalVideo.style.maxWidth = '100%';
+                        modalVideo.style.maxHeight = '100%';
+                        
+                        if (type === 'video') {
+                            currentMediaElement = modalVideo;
+                            modalImg.classList.add('hidden');
+                            modalVideo.classList.remove('hidden');
+                            modalVideoSrc.src = src;
+                            // Update type based on extension
+                            const ext = src.split('.').pop().toLowerCase();
+                            modalVideoSrc.type = `video/${ext === 'mov' ? 'quicktime' : 'mp4'}`;
+                            modalVideo.load();
+                            modalVideo.play();
+                        } else {
+                            currentMediaElement = modalImg;
+                            modalVideo.classList.add('hidden');
+                            modalVideo.pause();
+                            modalImg.classList.remove('hidden');
+                            modalImg.src = src;
+                        }
+                        
+                        modal.classList.remove('hidden');
+                        modal.classList.add('flex');
+                    });
+                });
+
+                const closeModal = () => {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                    modalVideo.pause();
+                    modalVideoSrc.src = '';
+                    modalImg.src = '';
+                    currentRotation = 0;
+                    currentMediaElement = null;
+                };
+
+                closeBtn.addEventListener('click', closeModal);
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal || e.target === contentWrapper) closeModal();
+                });
+                
+                // Add ESC key listener
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                        closeModal();
+                    }
+                });
+
+                // Keyboard navigation for years
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') {
+                        const prevBtn = document.querySelector('a[title="Vorheriges Jahr"]');
+                        if (prevBtn) prevBtn.click();
+                    } else if (e.key === 'ArrowRight') {
+                        const nextBtn = document.querySelector('a[title="Nächstes Jahr"]');
+                        if (nextBtn) nextBtn.click();
+                    }
+                });
+
+                // Carousel Navigation
+                document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
+                    const scrollArea = wrapper.querySelector('.carousel-scroll-area');
+                    const btnPrev = wrapper.querySelector('.carousel-prev');
+                    const btnNext = wrapper.querySelector('.carousel-next');
+                    
+                    if (!scrollArea) return;
+
+                    const scrollAmount = 280; // approximate width of a polaroid + gap
+
+                    if (btnPrev) {
+                        btnPrev.addEventListener('click', () => {
+                            scrollArea.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                        });
+                    }
+                    
+                    if (btnNext) {
+                        btnNext.addEventListener('click', () => {
+                            scrollArea.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                        });
+                    }
+                });
+
+                // Vertical Navigation Logic
+                const scrollContainer = document.getElementById('main-scroll-container');
+                const sections = document.querySelectorAll('.snap-section');
+                const btnUp = document.getElementById('nav-up');
+                const btnDown = document.getElementById('nav-down');
+                
+                let currentSectionIndex = 0;
+
+                const updateNavButtons = () => {
+                    btnUp.disabled = currentSectionIndex === 0;
+                    btnDown.disabled = currentSectionIndex === sections.length - 1;
+                };
+
+                const scrollToSection = (index) => {
+                    if (index >= 0 && index < sections.length) {
+                        sections[index].scrollIntoView({ behavior: 'smooth' });
+                        currentSectionIndex = index;
+                        updateNavButtons();
+                    }
+                };
+
+                btnUp.addEventListener('click', () => scrollToSection(currentSectionIndex - 1));
+                btnDown.addEventListener('click', () => scrollToSection(currentSectionIndex + 1));
+
+                // Update current index on manual scroll
+                let scrollTimeout;
+                scrollContainer.addEventListener('scroll', () => {
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        const scrollPosition = scrollContainer.scrollTop;
+                        const windowHeight = window.innerHeight;
+                        currentSectionIndex = Math.round(scrollPosition / windowHeight);
+                        updateNavButtons();
+                    }, 100);
+                });
+
+                // Initial button state
+                updateNavButtons();
+            });
+        </script>
+
+        <footer class="hidden">
+            <!-- Removed old footer -->
+        </footer>
+	</body>
+</html>

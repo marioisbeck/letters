@@ -1,21 +1,24 @@
-#import "/template.typ": letter
+#import "/templates/template.typ": letter
 
 #show: letter.with(
   line_art_images: (
-    (path: "/line_art_images/IMG_9021_transparent.png",),
+    (path: "/line_art_images/IMG_9021_transparent.png", height: 6.70cm),
+    (path: "/line_art_images/13B3E89D-6B0F-4D4F-B987-B036EDF28C55_transparent.png", height: 6.70cm),
+    (path: "/line_art_images/afe8ff09-80da-48f7-bc96-ae835309eb97_transparent.png", height: 6.70cm),
+    (path: "/line_art_images/IMG_0007_transparent.png", height: 6.70cm),
   ),
   line_art_opacity: 15%,
 )
 
 Liebe Felien,
 
-alles Liebe und Gute zu deinem ersten Geburtstag! Es ist unglaublich, wie schnell dieses Jahr vergangen ist, und ich freue mich so sehr, diesen besonderen Tag mit dir feiern zu dürfen.
+alles Liebe und Gute zu deinem ersten Geburtstag! Was sagt der große Stift zum kleinen Stift? "Wachs-mal-Stift!" Es ist unglaublich, wie schnell dieses Jahr vergangen ist, und ich freue mich so sehr, diesen besonderen Tag mit dir feiern zu dürfen.
 
 *Rückblick auf das vergangene Jahr*
 
 Dieses Jahr war voller wunderbarer Momente und Meilensteine. Einer der schönsten Augenblicke war, als du zum ersten Mal gelächelt hast. Seitdem du das Lachen als Kommunikationsmittel nutzt, habe ich jegliche Ängste des Elterndaseins vergessen - schlaflose Nächte, keine Zeit mehr für eigene Projekte, keine Energie mehr... im Gegenteil, mit dir abzuhängen und dich zum Lachen zu bringen, ist eine meiner Lieblingsaktivitäten geworden! Du hast begonnen, Farben zu erkennen, Muster zu sehen und auf Ereignisse um dich herum zu reagieren. Jeder Tag mit dir war ein neues Abenteuer, und es ist faszinierend zu sehen, wie du die Welt entdeckst.
 
-*Dein Charakter in drei Worten*
+*Dein Charakter in ein paar Worten*
 
 [Wähle drei Worte, die ihren Charakter in diesem Alter am besten beschreiben, und schreibe einen kurzen Satz dazu, warum.]
 
@@ -45,6 +48,8 @@ Heute vor einem Jahr, als du das Licht der Welt erblickt hast, hatte ich zuerst 
 
 Ich denke von mir selbst, dass ich nur Risiken eingehe, die ich gut einschätzen kann. Dieses Jahr bin ich jedoch ein Risiko eingegangen, das ich zutiefst bereue! Ich habe dich für einen Moment alleine auf dem hinteren Teil des Bettes gelassen, um dein Fläschchen zu holen, und du hattest beschlossen, dass du das Fußende erkunden wolltest. Gerade als ich zurückkam (und ich hatte mich extrem beeilt!), sah ich dich Hals über Kopf aus dem Bett fallen. Du glaubst gar nicht, wie dumm ich mir vorkam! Seitdem lasse ich dich nur noch Risiken eingehen, die nicht lebensgefährlich sind. Es tut mir leid, und ich werde alles daransetzen, dass dies nicht wieder vorkommt - was es seitdem auch nicht mehr ist. 
 
+*Lebensweisheit des Jahres*
+
 Ich möchte hier noch hinzufügen, dass ich es für extrem wichtig halte, Risiken im Leben einzugehen! Ohne Risiken können wir unsere Grenzen nicht ausloten, uns nicht entfalten und uns nicht selbst entdecken. Ich werde dich immer darin unterstützen, deine eigenen Grenzen zu testen und zu erweitern! (Nur jetzt noch ein paar Jahre ohne Lebensgefahr ;-) …)
 
 *Erinnerung an geliebte Menschen*
@@ -61,7 +66,7 @@ Ich bin unendlich dankbar, dass du in mein Leben getreten bist. Du hast mir Kraf
 
 *Lebensweisheit des Jahres*
 
-[Ein konkreter Ratschlag oder eine Erkenntnis, die du in diesem Jahr gelernt hast und ihr für ihr späteres Leben mitgeben möchtest.]
+Ich möchte hier noch hinzufügen, dass ich es für extrem wichtig halte, Risiken im Leben einzugehen! Ohne Risiken können wir unsere Grenzen nicht ausloten, uns nicht entfalten und uns nicht selbst entdecken. Ich werde dich immer darin unterstützen, deine eigenen Grenzen zu testen und zu erweitern! (Nur jetzt noch ein paar Jahre ohne Lebensgefahr ;-) …)
 
 *Fragen an dein zukünftiges Ich*
 

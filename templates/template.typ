@@ -26,7 +26,7 @@
         
         placed(
           bottom + right, 
-          dx: 3cm, dy: 3cm, // Push it fully into the 3cm margin to reach the corner
+          dx: 0cm, dy: 0cm, // Keep it within the text area so it's fully printable
           
           // Size is now configurable
           block(width: line_art_size, height: img_height)[

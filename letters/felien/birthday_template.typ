@@ -1,4 +1,4 @@
-#import "/template.typ": letter
+#import "/templates/template.typ": letter
 
 #show: letter.with(
   line_art_images: (),
@@ -7,13 +7,13 @@
 
 Liebe Felien,
 
-alles Liebe und Gute zu deinem [Alter, z.B. zweiten] Geburtstag! Es ist unglaublich, wie schnell auch dieses Jahr vergangen ist, und ich freue mich so sehr, diesen besonderen Tag mit dir feiern zu dürfen.
+alles Liebe und Gute zu deinem [Alter, z.B. 4.] Geburtstag! [Hier ein schlechter Papa-Witz, z.B.: Was sagt der eine Luftballon zum anderen? Ich platze vor Freude!] Es ist unglaublich, wie schnell auch dieses Jahr vergangen ist, und ich freue mich so sehr, diesen besonderen Tag mit dir feiern zu dürfen.
 
 *Rückblick auf das vergangene Jahr*
 
 [Beschreibe hier die wichtigsten Meilensteine, lustige Momente und wie sie sich entwickelt hat. Was waren ihre Lieblingsaktivitäten? Was hat sie in diesem Jahr Neues gelernt?]
 
-*Dein Charakter in drei Worten*
+*Dein Charakter in ein paar Worten*
 
 [Wähle drei Worte, die ihren Charakter in diesem Alter am besten beschreiben, und schreibe einen kurzen Satz dazu, warum.]
 
@@ -43,7 +43,7 @@ alles Liebe und Gute zu deinem [Alter, z.B. zweiten] Geburtstag! Es ist unglaubl
 
 *Erinnerung an geliebte Menschen*
 
-[Erinnere an Familie und geliebte Menschen, besonders an Opa Edze und Oma Petra. Welche ihrer Eigenschaften siehst du vielleicht schon in Felien? Welche Werte oder Geschichten möchtest du ihr in diesem Jahr besonders mitgeben?]
+[Erzähle Felien von ihren Großeltern Edze und Petra. Wer waren sie? Wie hätten sie in diesem Alter mit ihr interagiert? Gib ihr ein Stück ihres "Spirits" und ihrer Persönlichkeit mit auf den Weg. Siehst du vielleicht schon Eigenschaften von ihnen in Felien?]
 
 *Dankbarkeit*
 

@@ -5,11 +5,10 @@ import os
 import sys
 from PIL import Image
 
-def process_image(img_path, grid_size=20):
+def process_image(img_path):
     """
     Reads an image, converts white background to transparent,
-    saves it as *_transparent.png, and generates an ascii art grid
-    for Typst meander contour wrapping.
+    and saves it as *_transparent.png.
     """
     try:
         img = Image.open(img_path).convert("RGBA")
@@ -38,30 +37,10 @@ def process_image(img_path, grid_size=20):
     trans_path = f"{base}_transparent.png"
     img.save(trans_path)
     
-    # Generate ascii art based on alpha channel
-    ascii_art = ""
-    cell_w = width / grid_size
-    cell_h = height / grid_size
-    
-    for row in range(grid_size):
-        row_str = ""
-        for col in range(grid_size):
-            left = int(col * cell_w)
-            upper = int(row * cell_h)
-            right = int((col + 1) * cell_w)
-            lower = int((row + 1) * cell_h)
-            cell = img.crop((left, upper, right, lower))
-            
-            # Check if there are opaque pixels (alpha > 50)
-            pixels = cell.getdata()
-            has_opaque = any(p[3] > 50 for p in pixels)
-            row_str += "#" if has_opaque else " "
-        ascii_art += row_str + "\n"
-        
-    return trans_path, ascii_art, aspect_ratio
+    return trans_path, aspect_ratio
 
 def main():
-    parser = argparse.ArgumentParser(description="Add line art images to a Typst letter with contour wrapping.")
+    parser = argparse.ArgumentParser(description="Add line art images to a Typst letter with block wrapping.")
     parser.add_argument("letter", help="Path to the letter (.typ) file (e.g., letters/my_letter.typ)")
     parser.add_argument("images", nargs="+", help="Paths to the line art images (e.g., line_art_images/img1.png)")
     parser.add_argument("--opacity", default="15%", help="Opacity of the line art (default: 15%%)")
@@ -74,42 +53,22 @@ def main():
 
     # Process images
     processed_images = []
-    grids_typ_content = ""
     
     for i, img_path in enumerate(args.images):
         print(f"Processing {img_path}...")
-        trans_path, ascii_art, aspect_ratio = process_image(img_path, grid_size=20)
+        trans_path, aspect_ratio = process_image(img_path)
         
         # Ensure path starts with / so Typst treats it relative to project root
         typ_trans_path = trans_path if trans_path.startswith("/") else f"/{trans_path}"
         
-        grid_var_name = f"img{i+1}_grid"
-        # We write the ascii art as a raw string block in Typst
-        grids_typ_content += f"#let {grid_var_name} = ```\n{ascii_art}```\n\n"
-        
         processed_images.append({
             "path": typ_trans_path,
-            "grid_var": grid_var_name,
             "aspect_ratio": aspect_ratio
         })
-
-    # Write the grids to a companion .typ file
-    base_letter = os.path.splitext(args.letter)[0]
-    grids_file = f"{base_letter}_grids.typ"
-    with open(grids_file, "w") as f:
-        f.write(grids_typ_content)
-        
-    print(f"Generated grids in {grids_file}")
 
     # Update the letter file
     with open(args.letter, "r") as f:
         content = f.read()
-
-    # Add import for grids if not present
-    grids_import = f'#import "{os.path.basename(grids_file)}": *\n'
-    if grids_import not in content:
-        # Put it after the template import
-        content = re.sub(r'(#import "[^"]+template\.typ": letter\n)', r'\1' + grids_import, content)
 
     # Format the line_art_images array
     images_str = "(\n"
@@ -120,7 +79,7 @@ def main():
         height_val = size_val * img["aspect_ratio"]
         height_str = f"{height_val:.2f}{size_unit}"
         
-        images_str += f'    (path: "{img["path"]}", grid: {img["grid_var"]}, height: {height_str}),\n'
+        images_str += f'    (path: "{img["path"]}", height: {height_str}),\n'
     images_str += "  )"
     
     # Check if line_art_images is already in the file
@@ -162,7 +121,7 @@ def main():
     with open(args.letter, "w") as f:
         f.write(content)
         
-    print(f"Successfully updated {args.letter} with contour wrapping for {len(args.images)} image(s).")
+    print(f"Successfully updated {args.letter} with block wrapping for {len(args.images)} image(s).")
     print(f"Compile with: typst compile {args.letter} --root .")
 
 if __name__ == "__main__":

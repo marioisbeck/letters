@@ -5,9 +5,12 @@ This repository is set up for writing `.typ` letters and converting images into 
 ## Directory Structure
 
 - `letters/`: Store your `.typ` letter files here.
+  - `letters/mieke/`: Letters for Mieke.
+  - `letters/felien/`: Letters for Felien.
 - `raw_images/`: Place your original photos here.
 - `line_art_images/`: The generated line art illustrations will be saved here.
-- `template.typ`: A base Typst template for formatting your letters.
+- `templates/`: Contains the `template.typ` base Typst template for formatting your letters.
+- `scripts/`: Contains utility scripts like `add_line_art.py`.
 
 ## How to use the Image Conversion
 
@@ -19,20 +22,20 @@ This project includes a custom AI skill for Cursor.
 
 ## Writing Letters
 
-You can use the provided `template.typ` to write your letters. To compile a letter to PDF, you need [Typst](https://typst.app/) installed on your system. 
+You can use the provided `templates/template.typ` to write your letters. To compile a letter to PDF, you need [Typst](https://typst.app/) installed on your system. 
 
 *Note: It is recommended to compile from the project root so that absolute paths to templates and images work correctly.*
 
 ```bash
-typst compile letters/your_letter.typ --root .
+typst compile letters/felien/your_letter.typ --root .
 ```
 
 ## Adding Line Art to Letters
 
 You can easily add generated line art images to the bottom right corner of your letters. The system will automatically:
-1. Increase the image size to 150% (12cm x 12cm).
-2. Extract the contour of the people in the line art using an ASCII art representation.
-3. Make the text flow elegantly *around* the contour of the image.
+1. Make the image background transparent.
+2. Calculate the correct aspect ratio and set the image size (default width is 12cm).
+3. Make the text flow elegantly *around* the image block.
 4. Keep the image slightly transparent so it blends beautifully with the page.
 
 If your letter has multiple pages, you can provide multiple images, and it will cycle through them (one per page).
@@ -41,19 +44,19 @@ Use the included Python script to automatically process the images and update yo
 
 ```bash
 # Add one image to a letter
-./add_line_art.py letters/your_letter.typ line_art_images/sample1.png
+python scripts/add_line_art.py letters/felien/your_letter.typ line_art_images/sample1.png
 
 # Add multiple images (one for each page)
-./add_line_art.py letters/your_letter.typ line_art_images/sample1.png line_art_images/sample2.png
+python scripts/add_line_art.py letters/felien/your_letter.typ line_art_images/sample1.png line_art_images/sample2.png
 
 # Customize the watermark opacity (default is 15%)
-./add_line_art.py letters/your_letter.typ line_art_images/sample1.png --opacity 20%
+python scripts/add_line_art.py letters/felien/your_letter.typ line_art_images/sample1.png --opacity 20%
 
-# Customize the image size (default is 12cm)
-./add_line_art.py letters/your_letter.typ line_art_images/sample1.png --size 14cm
+# Customize the image width (default is 12cm)
+python scripts/add_line_art.py letters/felien/your_letter.typ line_art_images/sample1.png --size 14cm
 ```
 
 After running the script, compile your letter as usual:
 ```bash
-typst compile letters/your_letter.typ --root .
+typst compile letters/felien/your_letter.typ --root .
 ```
