@@ -197,8 +197,14 @@ const getYear = (dateStr) => {
                 }
             }
             @media (max-width: 768px) {
+                .horizontal-scroll {
+                    justify-content: flex-start; /* Ensure left alignment on mobile so we can scroll to the first item */
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
                 .year-card {
                     flex: 0 0 85vw; /* 1 card on mobile */
+                    min-width: 85vw;
                 }
             }
             .year-card:hover {
@@ -259,7 +265,7 @@ const getYear = (dateStr) => {
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
             
-            <div class="horizontal-scroll gap-6 md:gap-8 lg:gap-12 px-4 pt-2 pb-8 relative z-10 justify-center">
+            <div class="horizontal-scroll gap-6 md:gap-8 lg:gap-12 pt-2 pb-8 relative z-10 md:justify-center">
                 {years.map((year) => (
                     <a href={`/year/${year.id}`} class="year-card block bg-white rounded-2xl overflow-hidden shadow-lg border border-[#f0eadd] group">
                         <div class="relative h-64 overflow-hidden bg-[#f4f1ea] flex items-center justify-center p-6">

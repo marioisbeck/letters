@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import AppStoreGallery from '../../components/AppStoreGallery';
 import '../../styles/global.css';
 
 export async function getStaticPaths() {
@@ -83,6 +84,7 @@ const currentYearData = yearData[yearNum];
             .snap-container {
                 height: 100vh;
                 overflow-y: auto;
+                overflow-x: hidden;
                 scroll-snap-type: y mandatory;
                 scroll-behavior: smooth;
                 -webkit-overflow-scrolling: touch;
@@ -141,26 +143,40 @@ const currentYearData = yearData[yearNum];
 	<body class="antialiased overflow-hidden">
         
         <!-- Navigation -->
-        <nav class="fixed top-0 left-0 right-0 z-50 bg-[#faf9f6]/90 backdrop-blur-md border-b border-[#f0eadd] px-6 py-4">
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-[#faf9f6]/90 backdrop-blur-md border-b border-[#f0eadd] px-6 py-4 flex items-center justify-between md:justify-center">
+            <!-- Mobile Home Button -->
+            <a href="/" class="md:hidden p-2 -ml-2 rounded-full text-[#a89f91] hover:text-[#4a4238] transition-colors" title="Zurück zur Übersicht">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            </a>
+            
             <div class="max-w-7xl mx-auto flex items-center justify-center">
                 <h1 class="serif-font italic text-xl text-[#4a4238]">{currentYearData.title}</h1>
             </div>
+            
+            <!-- Mobile Hidden Links for Swipe Navigation -->
+            <div class="hidden">
+                <a href={`/year/${yearNum - 1}`} id="mobile-prev-year">Prev</a>
+                <a href={`/year/${yearNum + 1}`} id="mobile-next-year">Next</a>
+            </div>
+            
+            <!-- Empty div to balance the mobile header flexbox -->
+            <div class="w-10 md:hidden"></div>
         </nav>
 
         <div class="snap-container pt-16 relative" id="main-scroll-container">
-            <!-- Unified Navigation Controls -->
-            <div class="fixed right-6 bottom-6 md:right-8 md:bottom-8 z-50 grid grid-cols-3 gap-1 bg-[#faf9f6]/90 backdrop-blur-md p-2 rounded-2xl shadow-lg border border-[#f0eadd]">
+            <!-- Desktop Unified Navigation Controls (Hidden on Mobile) -->
+            <div class="hidden md:grid fixed right-8 bottom-8 z-50 grid-cols-3 gap-1 bg-[#faf9f6]/90 backdrop-blur-md p-2 rounded-2xl shadow-lg border border-[#f0eadd] pointer-events-auto">
                 <!-- Up Button -->
                 <div class="col-start-2 flex justify-center">
-                    <button id="nav-up" class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Previous section">
+                    <button id="nav-up" class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors disabled:opacity-30 disabled:cursor-not-allowed pointer-events-auto" aria-label="Previous section">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
                     </button>
                 </div>
                 
-                <!-- Left Button (Previous Year) -->
+                                <!-- Left Button (Previous Year) -->
                 <div class="col-start-1 row-start-2 flex justify-center">
                     {yearNum > 1 ? (
-                        <a href={`/year/${yearNum - 1}`} class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors" title="Vorheriges Jahr">
+                        <a href={`/year/${yearNum - 1}`} class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors pointer-events-auto" title="Vorheriges Jahr">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                         </a>
                     ) : (
@@ -168,24 +184,24 @@ const currentYearData = yearData[yearNum];
                     )}
                 </div>
                 
-                <!-- Center Button (Home) -->
+                                <!-- Center Button (Home) -->
                 <div class="col-start-2 row-start-2 flex justify-center items-center">
-                    <a href="/" class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors" title="Zurück zur Übersicht">
+                    <a href="/" class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors pointer-events-auto" title="Zurück zur Übersicht">
                         <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                     </a>
                 </div>
                 
                 <!-- Down Button -->
                 <div class="col-start-2 row-start-3 flex justify-center">
-                    <button id="nav-down" class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Next section">
+                    <button id="nav-down" class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors disabled:opacity-30 disabled:cursor-not-allowed pointer-events-auto" aria-label="Next section">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                 </div>
                 
-                <!-- Right Button (Next Year) -->
+                                <!-- Right Button (Next Year) -->
                 <div class="col-start-3 row-start-2 flex justify-center">
                     {yearNum < 3 ? (
-                        <a href={`/year/${yearNum + 1}`} class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors" title="Nächstes Jahr">
+                        <a href={`/year/${yearNum + 1}`} class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors pointer-events-auto" title="Nächstes Jahr">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </a>
                     ) : (
@@ -197,8 +213,8 @@ const currentYearData = yearData[yearNum];
             <!-- Intro Section -->
             <section class="snap-section relative w-full h-[calc(100vh-4rem)] flex flex-col items-center justify-end overflow-hidden bg-[#faf9f6] pb-4">
                 <!-- Background Image -->
-                <div class="absolute bottom-[100px] left-0 w-full h-[60vh] flex items-end justify-center z-0">
-                    <img src={currentYearData.image} alt="Background" class="w-full h-full object-contain object-bottom opacity-90" />
+                <div class="absolute bottom-[100px] left-0 right-0 w-full h-[60vh] flex items-end justify-center z-0 overflow-hidden">
+                    <img src={currentYearData.image} alt="Background" class="w-full h-full object-contain object-bottom opacity-90 max-w-full" />
                 </div>
                 
                 <div class="z-10 text-center px-4 relative">
@@ -260,67 +276,27 @@ const currentYearData = yearData[yearNum];
                                 </div>
                                 
                                 <!-- Media Side -->
-                                <div class="w-full md:w-1/2 h-full flex items-center justify-center relative min-h-[40vh] pointer-events-auto" style="touch-action: pan-x;">
+                                <div class="w-full md:w-1/2 h-full flex items-center justify-center relative min-h-[40vh] pointer-events-auto overflow-hidden">
                                     {isLetter && entry.data.line_art ? (
                                         <div class="w-full h-full flex items-center justify-center p-8">
                                             <img src={entry.data.line_art} alt="Line Art" class="max-w-full max-h-[60vh] object-contain opacity-80 mix-blend-multiply drop-shadow-sm" />
                                         </div>
                                     ) : mediaCount > 0 && (
-                                        <div class="w-full relative carousel-wrapper group/carousel">
-                                            {/* Left Navigation Button */}
-                                            {mediaCount > 1 && (
-                                                <button class="carousel-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg text-[#a89f91] hover:text-[#4a4238] transition-all transform hover:scale-110 opacity-0 group-hover/carousel:opacity-100 md:-ml-4 focus:opacity-100" aria-label="Previous image">
-                                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                                                </button>
-                                            )}
-
-                                            {/* Carousel Container */}
-                                            <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 pt-4 px-4 no-scrollbar pointer-events-auto carousel-scroll-area" style="overscroll-behavior-x: contain;">
-                                                {entry.data.media.map((mediaFile, mIndex) => {
+                                        <AppStoreGallery 
+                                            client:load
+                                            items={entry.data.media.map((mediaFile, mIndex) => {
                                                     const isVideo = mediaFile.toLowerCase().endsWith('.mp4') || mediaFile.toLowerCase().endsWith('.mov');
                                                     const mediaPath = `/media/${mediaFile}`;
                                                     const rotations = ['-rotate-2', 'rotate-1', '-rotate-1', 'rotate-2'];
                                                     const rotation = rotations[mIndex % rotations.length];
-                                                    
-                                                    // Show 2 items at a time by adjusting width
-                                                    return (
-                                                        <div class={`snap-center shrink-0 w-[45%] min-w-[200px] max-w-[280px] polaroid ${rotation} pointer-events-auto`} 
-                                                             data-src={mediaPath} data-type={isVideo ? 'video' : 'image'}>
-                                                        {isVideo ? (
-                                                                <div class="relative pointer-events-none">
-                                                                    <video class="w-full h-64 object-cover bg-gray-100 pointer-events-none">
-                                                                        <source src={mediaPath} type={`video/${mediaFile.split('.').pop()}`} />
-                                                                    </video>
-                                                                    <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors pointer-events-none">
-                                                                        <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                                                                    </div>
-                                                                </div>
-                                                            ) : (
-                                                                <img src={mediaPath} alt="Memory" class="w-full h-64 object-cover bg-gray-100 pointer-events-none" loading="lazy" />
-                                                            )}
-                                                        </div>
-                                                    );
-                                                })}
-                                            </div>
-                                            
-                                            {/* Right Navigation Button */}
-                                            {mediaCount > 1 && (
-                                                <button class="carousel-next absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg text-[#a89f91] hover:text-[#4a4238] transition-all transform hover:scale-110 opacity-0 group-hover/carousel:opacity-100 md:-mr-4 focus:opacity-100" aria-label="Next image">
-                                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                                </button>
-                                            )}
-                                            
-                                            {/* Swipe Indicator */}
-                                            {mediaCount > 1 && (
-                                                <div class="absolute bottom-0 left-0 right-0 flex justify-center gap-2 pointer-events-none">
-                                                    <div class="flex gap-1">
-                                                        {entry.data.media.map((_, i) => (
-                                                            <div class="w-1.5 h-1.5 rounded-full bg-[#dcd3c6]"></div>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
+                                                    return {
+                                                        id: `${entry.id}-${mIndex}`,
+                                                        url: mediaPath,
+                                                        type: isVideo ? 'video' : 'image',
+                                                        rotation: rotation
+                                                };
+                                            })}
+                                        />
                                     )}
                                 </div>
                                 
@@ -351,128 +327,8 @@ const currentYearData = yearData[yearNum];
             </section>
         </div>
         
-        <!-- Fullscreen Modal (Vanilla JS) -->
-        <div id="media-modal" class="hidden fixed inset-0 z-[100] items-center justify-center bg-black/90 backdrop-blur-sm p-4 md:p-12 transition-opacity duration-300">
-            
-            <!-- Controls Container -->
-            <div class="absolute top-6 right-6 flex items-center gap-4 z-50">
-                <!-- Rotate Button -->
-                <button id="modal-rotate" class="text-white hover:text-gray-300 transition-colors bg-black/50 p-2 rounded-full backdrop-blur-md" title="Rotate 90°">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                    </svg>
-                </button>
-                
-                <!-- Close Button -->
-                <button id="modal-close" class="text-white hover:text-gray-300 transition-colors bg-black/50 p-2 rounded-full backdrop-blur-md" title="Close (Esc)">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-            </div>
-            
-            <div id="modal-content-wrapper" class="relative w-full h-full flex items-center justify-center overflow-hidden">
-                <img id="modal-img" src="" class="hidden max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-transform duration-300" />
-                <video id="modal-video" controls class="hidden max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-transform duration-300">
-                    <source id="modal-video-src" src="" type="video/mp4" />
-                </video>
-            </div>
-        </div>
-
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const modal = document.getElementById('media-modal');
-                const modalImg = document.getElementById('modal-img');
-                const modalVideo = document.getElementById('modal-video');
-                const modalVideoSrc = document.getElementById('modal-video-src');
-                const closeBtn = document.getElementById('modal-close');
-                const rotateBtn = document.getElementById('modal-rotate');
-                const contentWrapper = document.getElementById('modal-content-wrapper');
-                
-                let currentRotation = 0;
-                let currentMediaElement = null;
-
-                const applyRotation = () => {
-                    if (currentMediaElement) {
-                        currentMediaElement.style.transform = `rotate(${currentRotation}deg)`;
-                        
-                        // Adjust max dimensions based on rotation to prevent clipping
-                        if (currentRotation % 180 !== 0) {
-                            // When rotated 90 or 270 degrees, swap max-width and max-height logic
-                            currentMediaElement.style.maxWidth = '90vh';
-                            currentMediaElement.style.maxHeight = '90vw';
-                        } else {
-                            currentMediaElement.style.maxWidth = '100%';
-                            currentMediaElement.style.maxHeight = '100%';
-                        }
-                    }
-                };
-
-                rotateBtn.addEventListener('click', (e) => {
-                    e.stopPropagation(); // Prevent modal close
-                    currentRotation = (currentRotation + 90) % 360;
-                    applyRotation();
-                });
-
-                document.querySelectorAll('.polaroid').forEach(el => {
-                    el.addEventListener('click', () => {
-                        const src = el.getAttribute('data-src');
-                        const type = el.getAttribute('data-type');
-                        
-                        // Reset rotation
-                        currentRotation = 0;
-                        modalImg.style.transform = 'rotate(0deg)';
-                        modalVideo.style.transform = 'rotate(0deg)';
-                        modalImg.style.maxWidth = '100%';
-                        modalImg.style.maxHeight = '100%';
-                        modalVideo.style.maxWidth = '100%';
-                        modalVideo.style.maxHeight = '100%';
-                        
-                        if (type === 'video') {
-                            currentMediaElement = modalVideo;
-                            modalImg.classList.add('hidden');
-                            modalVideo.classList.remove('hidden');
-                            modalVideoSrc.src = src;
-                            // Update type based on extension
-                            const ext = src.split('.').pop().toLowerCase();
-                            modalVideoSrc.type = `video/${ext === 'mov' ? 'quicktime' : 'mp4'}`;
-                            modalVideo.load();
-                            modalVideo.play();
-                        } else {
-                            currentMediaElement = modalImg;
-                            modalVideo.classList.add('hidden');
-                            modalVideo.pause();
-                            modalImg.classList.remove('hidden');
-                            modalImg.src = src;
-                        }
-                        
-                        modal.classList.remove('hidden');
-                        modal.classList.add('flex');
-                    });
-                });
-
-                const closeModal = () => {
-                    modal.classList.add('hidden');
-                    modal.classList.remove('flex');
-                    modalVideo.pause();
-                    modalVideoSrc.src = '';
-                    modalImg.src = '';
-                    currentRotation = 0;
-                    currentMediaElement = null;
-                };
-
-                closeBtn.addEventListener('click', closeModal);
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal || e.target === contentWrapper) closeModal();
-                });
-                
-                // Add ESC key listener
-                document.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                        closeModal();
-                    }
-                });
-
                 // Keyboard navigation for years
                 document.addEventListener('keydown', (e) => {
                     if (e.key === 'ArrowLeft') {
@@ -577,6 +433,46 @@ const currentYearData = yearData[yearNum];
                 updateNavButtons();
                 updateYearLinks();
                 
+                // Add touch swipe handling for mobile year navigation
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                document.addEventListener('touchstart', e => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                document.addEventListener('touchend', e => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe(e);
+                }, { passive: true });
+
+                const handleSwipe = (e) => {
+                    const swipeThreshold = 50; // Lower threshold for easier swiping
+                    const swipeDistance = touchEndX - touchStartX;
+                    
+                    // Don't trigger swipe if we're interacting with a carousel or modal
+                    if (document.querySelector('#media-modal:not(.hidden)') || 
+                        (e && e.target && e.target.closest('.carousel-scroll-area'))) {
+                        return;
+                    }
+
+                    // Get current year from URL robustly
+                    const match = window.location.pathname.match(/\/year\/(\d+)/);
+                    const currentYear = match ? parseInt(match[1]) : 1;
+
+                    if (swipeDistance > swipeThreshold) {
+                        // Swiped right -> go to previous year
+                        if (currentYear > 1) {
+                            window.location.href = `/year/${currentYear - 1}`;
+                        }
+                    } else if (swipeDistance < -swipeThreshold) {
+                        // Swiped left -> go to next year
+                        if (currentYear < 3) {
+                            window.location.href = `/year/${currentYear + 1}`;
+                        }
+                    }
+                };
+
                 // Handle initial hash for month navigation
                 if (window.location.hash) {
                     if (window.location.hash === '#letter') {
