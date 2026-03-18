@@ -8,6 +8,8 @@ const timelineCollection = defineCollection({
     date: z.date().or(z.string()),
     type: z.string().optional(), // 'letter' or undefined
     media: z.array(z.string()).optional().default([]),
+    pdf: z.string().optional(),
+    line_art: z.string().optional(),
   }),
 });
 

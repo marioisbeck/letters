@@ -7,6 +7,7 @@ This repository is set up for writing `.typ` letters and converting images into 
 - `letters/`: Store your `.typ` letter files here.
   - `letters/mieke/`: Letters for Mieke.
   - `letters/felien/`: Letters for Felien.
+    - `letters/felien/scrapbook/website/`: An Astro-based digital scrapbook for viewing the letters interactively.
 - `raw_images/`: Place your original photos here.
 - `line_art_images/`: The generated line art illustrations will be saved here.
 - `templates/`: Contains the `template.typ` base Typst template for formatting your letters.
@@ -60,3 +61,19 @@ After running the script, compile your letter as usual:
 ```bash
 typst compile letters/felien/your_letter.typ --root .
 ```
+
+## Digital Scrapbook
+
+This repository also includes a digital scrapbook built with [Astro](https://astro.build/). It serves as a beautiful, interactive timeline for the letters.
+
+The scrapbook is located at `letters/felien/scrapbook/website/`.
+
+To run the scrapbook locally:
+
+```bash
+cd letters/felien/scrapbook/website
+npm install
+npm run dev
+```
+
+The scrapbook will be available at `http://localhost:4321`.
