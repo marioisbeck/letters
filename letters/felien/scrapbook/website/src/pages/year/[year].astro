@@ -225,16 +225,17 @@ const currentYearData = yearData[yearNum];
                 renderedEntries.map(({ entry, Content }, index) => {
                     const isLetter = entry.data.type === 'letter';
                     const dateObj = new Date(entry.data.date);
+                    const monthNum = dateObj.getMonth() + 1;
                     const monthName = dateObj.toLocaleDateString('de-DE', { month: 'long', year: 'numeric' });
                     const mediaCount = entry.data.media ? entry.data.media.length : 0;
                     const isEven = index % 2 === 0;
                     
                     return (
-                        <section class={`snap-section w-full flex items-center justify-center p-8 md:p-16 ${isLetter ? 'bg-[#f4f1ea]' : 'bg-[#faf9f6]'}`}>
+                        <section data-month={monthNum} data-type={isLetter ? 'letter' : 'month'} class={`snap-section w-full flex items-center justify-center p-8 md:p-16 ${isLetter ? 'bg-[#f4f1ea]' : 'bg-[#faf9f6]'}`}>
                             <div class={`max-w-7xl w-full h-full max-h-[85vh] flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 md:gap-24 items-center`}>
                                 
                                 <!-- Content Side -->
-                                <div class="w-full md:w-1/2 h-full flex flex-col justify-center overflow-y-auto pr-4 pb-8">
+                                <div class="w-full md:w-1/2 h-full flex flex-col overflow-y-auto pr-4 pb-8">
                                     <div class="pt-4 pb-6">
                                         <div class="text-sm font-medium tracking-[0.2em] text-[#b3a89a] uppercase mb-3">
                                             {isLetter ? 'Geburtstagsbrief' : monthName}
@@ -514,6 +515,33 @@ const currentYearData = yearData[yearNum];
                 
                 let currentSectionIndex = 0;
 
+                const updateYearLinks = () => {
+                    const currentSection = sections[currentSectionIndex];
+                    const month = currentSection?.getAttribute('data-month');
+                    const type = currentSection?.getAttribute('data-type');
+                    
+                    const prevBtn = document.querySelector('a[title="Vorheriges Jahr"]');
+                    const nextBtn = document.querySelector('a[title="Nächstes Jahr"]');
+                    
+                    let hash = '';
+                    if (type === 'letter') {
+                        hash = '#letter';
+                    } else if (month) {
+                        hash = `#month-${month}`;
+                    }
+                    
+                    if (prevBtn) {
+                        const url = new URL(prevBtn.href);
+                        url.hash = hash;
+                        prevBtn.href = url.toString();
+                    }
+                    if (nextBtn) {
+                        const url = new URL(nextBtn.href);
+                        url.hash = hash;
+                        nextBtn.href = url.toString();
+                    }
+                };
+
                 const updateNavButtons = () => {
                     btnUp.disabled = currentSectionIndex === 0;
                     btnDown.disabled = currentSectionIndex === sections.length - 1;
@@ -524,6 +552,7 @@ const currentYearData = yearData[yearNum];
                         sections[index].scrollIntoView({ behavior: 'smooth' });
                         currentSectionIndex = index;
                         updateNavButtons();
+                        updateYearLinks();
                     }
                 };
 
@@ -532,6 +561,7 @@ const currentYearData = yearData[yearNum];
 
                 // Update current index on manual scroll
                 let scrollTimeout;
+
                 scrollContainer.addEventListener('scroll', () => {
                     clearTimeout(scrollTimeout);
                     scrollTimeout = setTimeout(() => {
@@ -539,11 +569,65 @@ const currentYearData = yearData[yearNum];
                         const windowHeight = window.innerHeight;
                         currentSectionIndex = Math.round(scrollPosition / windowHeight);
                         updateNavButtons();
+                        updateYearLinks();
                     }, 100);
                 });
 
                 // Initial button state
                 updateNavButtons();
+                updateYearLinks();
+                
+                // Handle initial hash for month navigation
+                if (window.location.hash) {
+                    if (window.location.hash === '#letter') {
+                        let targetIndex = -1;
+                        
+                        // Try to find a letter section
+                        sections.forEach((sec, index) => {
+                            if (sec.getAttribute('data-type') === 'letter') {
+                                targetIndex = index;
+                            }
+                        });
+                        
+                        // If no letter found, try to find January (month 1)
+                        if (targetIndex === -1) {
+                            sections.forEach((sec, index) => {
+                                if (sec.getAttribute('data-month') === '1' && sec.getAttribute('data-type') !== 'letter') {
+                                    targetIndex = index;
+                                }
+                            });
+                        }
+                        
+                        if (targetIndex !== -1) {
+                            setTimeout(() => scrollToSection(targetIndex), 100);
+                        }
+                    } else if (window.location.hash.startsWith('#month-')) {
+                        const targetMonth = parseInt(window.location.hash.replace('#month-', ''));
+                        if (!isNaN(targetMonth)) {
+                            const getMonthIndex = (m) => (m - 11 + 12) % 12;
+                            const targetMapped = getMonthIndex(targetMonth);
+                            
+                            let targetIndex = -1;
+                            let minDiff = 999;
+                            
+                            sections.forEach((sec, index) => {
+                                const m = sec.getAttribute('data-month');
+                                const t = sec.getAttribute('data-type');
+                                if (m && t !== 'letter') {
+                                    const diff = Math.abs(getMonthIndex(parseInt(m)) - targetMapped);
+                                    if (diff < minDiff) {
+                                        minDiff = diff;
+                                        targetIndex = index;
+                                    }
+                                }
+                            });
+                            
+                            if (targetIndex !== -1) {
+                                setTimeout(() => scrollToSection(targetIndex), 100);
+                            }
+                        }
+                    }
+                }
             });
         </script>
 
