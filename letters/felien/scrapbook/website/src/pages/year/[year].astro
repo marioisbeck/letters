@@ -48,7 +48,7 @@ const yearData = {
     2: {
         title: "2024 - 2025",
         image: "/line_art/IMG_9804_transparent.png",
-        description: "Erste Worte, neue Entdeckungen und ganz viel Persönlichkeit."
+        description: "Erste Schritte. erste Worte, neue Entdeckungen und ganz viel Persönlichkeit. Ein wahrer Wonneproppen."
     },
     3: {
         title: "2025 - Heute",
@@ -152,48 +152,64 @@ const currentYearData = yearData[yearNum];
         </nav>
 
         <div class="snap-container pt-16 relative" id="main-scroll-container">
-            <!-- Navigation Controls -->
-            <div class="fixed right-6 bottom-8 z-40 flex flex-col gap-3">
-                <button id="nav-up" class="bg-[#faf9f6]/80 backdrop-blur-sm p-3 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:-translate-y-1 disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Previous section">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
-                </button>
-                <button id="nav-down" class="bg-[#faf9f6]/80 backdrop-blur-sm p-3 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:translate-y-1 disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Next section">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-            </div>
-            
-            <!-- Year Navigation Controls -->
-            {yearNum > 1 && (
-                <a href={`/year/${yearNum - 1}`} class="fixed left-4 md:left-8 top-1/2 -translate-y-1/2 z-40 bg-[#faf9f6]/80 backdrop-blur-sm p-3 md:p-4 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:-translate-x-1 flex items-center justify-center group" title="Vorheriges Jahr">
-                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    <span class="absolute left-full ml-2 bg-white px-2 py-1 rounded text-xs font-medium text-[#4a4238] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-sm border border-[#f0eadd] hidden md:block">Jahr {yearNum - 1}</span>
-                </a>
-            )}
-            {yearNum < 3 && (
-                <a href={`/year/${yearNum + 1}`} class="fixed right-4 md:right-8 top-1/2 -translate-y-1/2 z-40 bg-[#faf9f6]/80 backdrop-blur-sm p-3 md:p-4 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:translate-x-1 flex items-center justify-center group" title="Nächstes Jahr">
-                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    <span class="absolute right-full mr-2 bg-white px-2 py-1 rounded text-xs font-medium text-[#4a4238] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-sm border border-[#f0eadd] hidden md:block">Jahr {yearNum + 1}</span>
-                </a>
-            )}
-
-            <!-- Intro Section -->
-            <section class="snap-section relative w-full h-[calc(100vh-4rem)] flex flex-col items-center justify-center overflow-hidden bg-[#faf9f6] pt-8 pb-8">
-                <!-- Background Image -->
-                <div class="relative z-0 flex-grow flex items-center justify-center w-full min-h-0 -mb-24 md:-mb-32">
-                    <img src={currentYearData.image} alt="Background" class="max-w-2xl w-full h-full object-contain opacity-90 p-4" />
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#faf9f6] pointer-events-none"></div>
+            <!-- Unified Navigation Controls -->
+            <div class="fixed right-6 bottom-6 md:right-8 md:bottom-8 z-50 grid grid-cols-3 gap-1 bg-[#faf9f6]/90 backdrop-blur-md p-2 rounded-2xl shadow-lg border border-[#f0eadd]">
+                <!-- Up Button -->
+                <div class="col-start-2 flex justify-center">
+                    <button id="nav-up" class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Previous section">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+                    </button>
                 </div>
                 
-                <div class="z-10 text-center px-4 flex-shrink-0 mt-2">
-                    <h1 class="text-5xl md:text-7xl font-bold text-[#4a4238] mb-4 serif-font italic">{currentYearData.title}</h1>
+                <!-- Left Button (Previous Year) -->
+                <div class="col-start-1 row-start-2 flex justify-center">
+                    {yearNum > 1 ? (
+                        <a href={`/year/${yearNum - 1}`} class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors" title="Vorheriges Jahr">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </a>
+                    ) : (
+                        <div class="w-10 h-10 md:w-12 md:h-12"></div>
+                    )}
+                </div>
+                
+                <!-- Down Button -->
+                <div class="col-start-2 row-start-2 flex justify-center">
+                    <button id="nav-down" class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Next section">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                </div>
+                
+                <!-- Right Button (Next Year) -->
+                <div class="col-start-3 row-start-2 flex justify-center">
+                    {yearNum < 3 ? (
+                        <a href={`/year/${yearNum + 1}`} class="p-2 md:p-3 rounded-full hover:bg-white text-[#a89f91] hover:text-[#4a4238] transition-colors" title="Nächstes Jahr">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    ) : (
+                        <div class="w-10 h-10 md:w-12 md:h-12"></div>
+                    )}
+                </div>
+            </div>
+
+            <!-- Intro Section -->
+            <section class="snap-section relative w-full h-[calc(100vh-4rem)] flex flex-col items-center justify-end overflow-hidden bg-[#faf9f6] pb-12">
+                <!-- Background Image -->
+                <div class="absolute bottom-40 md:bottom-48 left-0 w-full h-[60vh] flex items-end justify-center z-0">
+                    <img src={currentYearData.image} alt="Background" class="w-full h-full object-contain object-bottom opacity-90" />
+                </div>
+                
+                <div class="z-10 text-center px-4 relative">
+                    <h1 class="text-5xl md:text-7xl font-bold text-[#4a4238] mb-4 serif-font italic" style="text-shadow: 0 4px 20px rgba(250, 249, 246, 0.8), 0 0 40px rgba(250, 249, 246, 0.9);">{currentYearData.title}</h1>
                     <h2 class="text-sm md:text-base tracking-[0.2em] text-[#4a4238] uppercase mb-6 max-w-2xl mx-auto leading-relaxed">{currentYearData.description}</h2>
                     
-                    <div class="animate-bounce">
-                        <svg class="w-6 h-6 text-[#a89f91] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    <div class="animate-bounce mt-8">
+                        <svg class="w-8 h-8 text-[#a89f91] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
                     </div>
                 </div>
+                
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#faf9f6] pointer-events-none z-5"></div>
             </section>
 
             {renderedEntries.length === 0 ? (

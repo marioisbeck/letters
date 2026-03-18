@@ -114,7 +114,7 @@ const getYear = (dateStr) => {
                 position: relative;
                 z-index: 10;
                 text-align: center;
-                padding-bottom: 80px; /* Space from the very bottom */
+                padding-bottom: 40px; /* Reduced from 80px to make room for arrow */
             }
             
             #hero-title {
@@ -151,6 +151,12 @@ const getYear = (dateStr) => {
             }
             
             body.hero-scrolled #timeline-section {
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: auto;
+            }
+            
+            body.hero-scrolled #main-footer {
                 opacity: 1;
                 transform: translateY(0);
                 pointer-events: auto;
@@ -207,19 +213,19 @@ const getYear = (dateStr) => {
                     <h2 class="hero-subtitle text-[#4a4238] uppercase"></h2>
                     <h1 id="hero-title" class="font-bold text-[#4a4238] serif-font italic">Felien Petra Beck</h1>
                     <h2 class="hero-subtitle text-[#4a4238] uppercase">Ein digitales Tagebuch</h2>
+                    
+                    <!-- Arrow moved inside the scaled wrapper so it's always perfectly below the text -->
+                    <div id="hero-arrow-container" class="mt-8 flex justify-center">
+                        <div id="hero-arrow" class="animate-bounce cursor-pointer">
+                            <svg class="w-16 h-16 text-[#a89f91] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Gradient overlay that scales with the wrapper -->
                 <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#faf9f6] pointer-events-none z-5"></div>
-            </div>
-            
-            <!-- Arrow (Outside the scaler so it just fades out) -->
-            <div id="hero-arrow-container" class="absolute bottom-8 left-0 right-0 flex justify-center z-20">
-                <div id="hero-arrow" class="animate-bounce cursor-pointer">
-                    <svg class="w-8 h-8 text-[#a89f91] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                </div>
             </div>
         </section>
 
@@ -233,6 +239,14 @@ const getYear = (dateStr) => {
                 <h2 class="text-3xl md:text-4xl serif-font italic text-[#4a4238] mb-4"></h2>
                 <div class="w-20 h-1 bg-[#cbbba6] mx-auto rounded-full"></div>
             </div>
+            
+            <!-- Timeline Navigation Controls -->
+            <button id="timeline-prev" class="absolute left-2 md:left-8 top-[60%] -translate-y-1/2 z-20 bg-[#faf9f6]/90 backdrop-blur-sm p-3 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:-translate-x-1 hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="timeline-next" class="absolute right-2 md:right-8 top-[60%] -translate-y-1/2 z-20 bg-[#faf9f6]/90 backdrop-blur-sm p-3 rounded-full shadow-md border border-[#f0eadd] text-[#a89f91] hover:text-[#4a4238] hover:bg-white transition-all transform hover:translate-x-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
             
             <div class="horizontal-scroll gap-8 md:gap-16 px-4 pt-2 pb-8 relative z-10">
                 {years.map((year) => (
@@ -255,8 +269,8 @@ const getYear = (dateStr) => {
             </div>
         </section>
         
-        <footer class="hidden">
-            <!-- Removed old footer -->
+        <footer id="main-footer" class="w-full py-6 text-center text-[#a89f91] text-xs md:text-sm bg-[#faf9f6] z-20 opacity-0 translate-y-4 transition-all duration-1000 ease-out pointer-events-none border-t border-[#f0eadd]">
+            <p>&copy; {new Date().getFullYear()} Familie Beck. Mit Liebe gemacht.</p>
         </footer>
 
         <script>
@@ -309,6 +323,41 @@ const getYear = (dateStr) => {
                 const arrow = document.getElementById('hero-arrow');
                 if (arrow) {
                     arrow.addEventListener('click', () => setScrolled(true));
+                }
+
+                // Timeline Navigation
+                const timelinePrev = document.getElementById('timeline-prev');
+                const timelineNext = document.getElementById('timeline-next');
+                
+                if (timelinePrev && timelineNext && horizontalScroll) {
+                    const scrollAmount = window.innerWidth * 0.8; // Roughly one card width
+                    
+                    timelinePrev.addEventListener('click', () => {
+                        horizontalScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    });
+                    
+                    timelineNext.addEventListener('click', () => {
+                        horizontalScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    });
+                    
+                    const updateTimelineButtons = () => {
+                        if (horizontalScroll.scrollLeft <= 10) {
+                            timelinePrev.classList.add('hidden');
+                        } else {
+                            timelinePrev.classList.remove('hidden');
+                        }
+                        
+                        if (horizontalScroll.scrollLeft >= horizontalScroll.scrollWidth - horizontalScroll.clientWidth - 10) {
+                            timelineNext.classList.add('hidden');
+                        } else {
+                            timelineNext.classList.remove('hidden');
+                        }
+                    };
+                    
+                    horizontalScroll.addEventListener('scroll', updateTimelineButtons);
+                    window.addEventListener('resize', updateTimelineButtons);
+                    // Initial check
+                    setTimeout(updateTimelineButtons, 100);
                 }
             });
         </script>
