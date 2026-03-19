@@ -70,9 +70,17 @@ const getYear = (dateStr) => {
                 width: 100vw;
                 transition: height 0.8s cubic-bezier(0.25, 1, 0.5, 1);
                 position: relative;
+                overflow: hidden;
+                z-index: 30;
+                flex-shrink: 0;
             }
             body.hero-scrolled #hero-section {
-                height: 40vh;
+                height: 30vh;
+            }
+            @media (min-width: 769px) {
+                body.hero-scrolled #hero-section {
+                    height: 40vh;
+                }
             }
 
             /* Mobile-first hero wrapper */
@@ -84,7 +92,7 @@ const getYear = (dateStr) => {
                 height: 100vh;
                 transform: translate(-50%, -5vh) scale(1);
                 transform-origin: top center;
-                transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+                transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), height 0.8s cubic-bezier(0.25, 1, 0.5, 1);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -92,7 +100,9 @@ const getYear = (dateStr) => {
                 overflow: hidden;
             }
             body.hero-scrolled #hero-wrapper {
-                transform: translate(-50%, -15vh) scale(1);
+                height: 30vh;
+                transform: translate(-50%, 0) scale(1);
+                justify-content: center;
             }
             @media (min-width: 769px) {
                 #hero-wrapper {
@@ -101,7 +111,9 @@ const getYear = (dateStr) => {
                     overflow: visible;
                 }
                 body.hero-scrolled #hero-wrapper {
+                    height: 100vh;
                     transform: translate(-50%, 4vh) scale(0.4);
+                    justify-content: flex-end;
                 }
             }
 
@@ -117,11 +129,12 @@ const getYear = (dateStr) => {
                 align-items: flex-end;
                 justify-content: center;
                 z-index: 0;
-                transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+                transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), bottom 0.8s cubic-bezier(0.25, 1, 0.5, 1);
                 transform-origin: bottom center;
                 transform: scale(1);
             }
             body.hero-scrolled #hero-image-container {
+                bottom: 0;
                 transform: scale(0.4);
             }
             @media (min-width: 769px) {
@@ -142,6 +155,15 @@ const getYear = (dateStr) => {
                 z-index: 10;
                 text-align: center;
                 padding-bottom: 40px;
+                transition: padding-bottom 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+            }
+            body.hero-scrolled #hero-text-container {
+                padding-bottom: 0;
+            }
+            @media (min-width: 769px) {
+                body.hero-scrolled #hero-text-container {
+                    padding-bottom: 40px;
+                }
             }
             
             /* Mobile-first text sizes */
@@ -196,6 +218,7 @@ const getYear = (dateStr) => {
                 scroll-snap-type: x mandatory;
                 scroll-behavior: smooth;
                 -webkit-overflow-scrolling: touch;
+                touch-action: pan-x;
                 padding-bottom: 2rem;
             }
             
@@ -339,29 +362,48 @@ const getYear = (dateStr) => {
                     if (!isScrolled && e.deltaY > 0) {
                         setScrolled(true);
                     } else if (isScrolled && e.deltaY < 0) {
-                        // Only unmorph if we are at the start of the horizontal scroll
-                        if (horizontalScroll && horizontalScroll.scrollLeft <= 0) {
-                            setScrolled(false);
-                        }
+                        setScrolled(false);
                     }
                 }, { passive: true });
 
                 // Handle touch for mobile
                 let touchStartY = 0;
+                let touchStartX = 0;
+                let touchDeltaY = 0;
+                let touchIntent = null; // 'vertical' | 'horizontal'
                 window.addEventListener('touchstart', (e) => {
                     touchStartY = e.touches[0].clientY;
+                    touchStartX = e.touches[0].clientX;
+                    touchDeltaY = 0;
+                    touchIntent = null;
                 }, { passive: true });
 
                 window.addEventListener('touchmove', (e) => {
-                    const touchEndY = e.touches[0].clientY;
-                    const deltaY = touchStartY - touchEndY;
-                    
-                    if (!isScrolled && deltaY > 50) {
+                    const touchCurrentY = e.touches[0].clientY;
+                    const touchCurrentX = e.touches[0].clientX;
+                    const deltaY = touchStartY - touchCurrentY;
+                    const deltaX = touchStartX - touchCurrentX;
+
+                    // Lock gesture intent early to avoid horizontal carousel swipes
+                    // from interfering with morph navigation.
+                    if (!touchIntent && (Math.abs(deltaY) > 12 || Math.abs(deltaX) > 12)) {
+                        touchIntent = Math.abs(deltaY) >= Math.abs(deltaX) ? 'vertical' : 'horizontal';
+                    }
+
+                    if (touchIntent === 'vertical') {
+                        touchDeltaY = deltaY;
+                    }
+                }, { passive: true });
+
+                window.addEventListener('touchend', () => {
+                    const swipeThreshold = 40;
+
+                    if (touchIntent !== 'vertical') return;
+
+                    if (!isScrolled && touchDeltaY > swipeThreshold) {
                         setScrolled(true);
-                    } else if (isScrolled && deltaY < -50) {
-                        if (horizontalScroll && horizontalScroll.scrollLeft <= 0) {
-                            setScrolled(false);
-                        }
+                    } else if (isScrolled && Math.abs(touchDeltaY) > swipeThreshold) {
+                        setScrolled(false);
                     }
                 }, { passive: true });
 
