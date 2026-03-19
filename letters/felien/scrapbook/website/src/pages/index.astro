@@ -75,7 +75,7 @@ const getYear = (dateStr) => {
                 flex-shrink: 0;
             }
             body.hero-scrolled #hero-section {
-                height: 30vh;
+                height: 50vh;
             }
             @media (min-width: 769px) {
                 body.hero-scrolled #hero-section {
@@ -100,9 +100,10 @@ const getYear = (dateStr) => {
                 overflow: hidden;
             }
             body.hero-scrolled #hero-wrapper {
-                height: 30vh;
+                height: 40vh;
                 transform: translate(-50%, 0) scale(1);
-                justify-content: center;
+                justify-content: flex-end;
+                padding-bottom: 0.25rem;
             }
             @media (min-width: 769px) {
                 #hero-wrapper {
@@ -114,6 +115,7 @@ const getYear = (dateStr) => {
                     height: 100vh;
                     transform: translate(-50%, 4vh) scale(0.4);
                     justify-content: flex-end;
+                    padding-bottom: 0;
                 }
             }
 
@@ -134,8 +136,14 @@ const getYear = (dateStr) => {
                 transform: scale(1);
             }
             body.hero-scrolled #hero-image-container {
-                bottom: 0;
-                transform: scale(0.4);
+                position: relative;
+                left: 0;
+                margin-left: 0;
+                width: 100%;
+                height: 18vh;
+                bottom: auto;
+                transform: none;
+                align-items: flex-end;
             }
             @media (min-width: 769px) {
                 #hero-image-container {
@@ -146,6 +154,13 @@ const getYear = (dateStr) => {
                     transform: none;
                 }
                 body.hero-scrolled #hero-image-container {
+                    position: absolute;
+                    left: 0;
+                    margin-left: 0;
+                    width: 100%;
+                    height: 80vh;
+                    bottom: 250px;
+                    align-items: flex-end;
                     transform: none;
                 }
             }
@@ -159,11 +174,19 @@ const getYear = (dateStr) => {
             }
             body.hero-scrolled #hero-text-container {
                 padding-bottom: 0;
+                position: relative;
+                z-index: 15;
+                margin-top: 0;
             }
             @media (min-width: 769px) {
                 body.hero-scrolled #hero-text-container {
                     padding-bottom: 40px;
+                    z-index: 10;
                 }
+            }
+
+            .hero-subtitle:empty {
+                display: none;
             }
             
             /* Mobile-first text sizes */
@@ -219,7 +242,7 @@ const getYear = (dateStr) => {
                 scroll-behavior: smooth;
                 -webkit-overflow-scrolling: touch;
                 touch-action: pan-x;
-                padding-bottom: 2rem;
+                padding-bottom: 0.5rem;
             }
             
             .horizontal-scroll::-webkit-scrollbar {
@@ -298,14 +321,14 @@ const getYear = (dateStr) => {
         </section>
 
         <!-- Horizontal Timeline Section -->
-        <section id="timeline-section" class="flex-grow pt-0 pb-12 px-4 md:px-12 max-w-[1400px] mx-auto w-full relative opacity-0 translate-y-20 transition-all duration-1000 ease-out pointer-events-none">
+        <section id="timeline-section" class="flex-grow pt-0 pb-0 md:pb-12 px-2 md:px-12 max-w-[1400px] mx-auto w-full relative opacity-0 translate-y-20 transition-all duration-1000 ease-out pointer-events-none">
             <!-- Decorative line art -->
             <img src="/line_art/IMG_0438_transparent.png" class="absolute top-0 left-0 w-64 h-64 opacity-5 -rotate-6 pointer-events-none hidden lg:block" alt="Decoration" />
             <img src="/line_art/afe8ff09-80da-48f7-bc96-ae835309eb97_transparent.png" class="absolute bottom-0 right-0 w-80 h-80 opacity-5 rotate-12 pointer-events-none hidden lg:block" alt="Decoration" />
             
-            <div class="text-center mb-2 relative z-10">
-                <h2 class="text-3xl md:text-4xl serif-font italic text-[#4a4238] mb-4"></h2>
-                <div class="w-20 h-1 bg-[#cbbba6] mx-auto rounded-full"></div>
+            <div class="text-center mb-1 md:mb-2 relative z-10">
+                <h2 class="text-2xl md:text-4xl serif-font italic text-[#4a4238] mb-2 md:mb-4"></h2>
+                <div class="w-16 md:w-20 h-1 bg-[#cbbba6] mx-auto rounded-full"></div>
             </div>
             
             <!-- Timeline Navigation Controls -->
@@ -316,28 +339,22 @@ const getYear = (dateStr) => {
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
             
-            <div class="horizontal-scroll gap-6 md:gap-8 lg:gap-12 pt-2 pb-8 relative z-10 md:justify-center">
+            <div class="horizontal-scroll gap-3 md:gap-8 lg:gap-12 pt-0 md:pt-2 pb-2 md:pb-8 relative z-10 md:justify-center">
                 {years.map((year) => (
                     <a href={`/year/${year.id}`} class="year-card block bg-white rounded-2xl overflow-hidden shadow-lg border border-[#f0eadd] group">
-                        <div class="relative h-64 overflow-hidden bg-[#f4f1ea] flex items-center justify-center p-6">
+                        <div class="relative h-40 md:h-64 overflow-hidden bg-[#f4f1ea] flex items-center justify-center p-2 md:p-6">
                             <img src={year.image} alt={year.title} class="w-full h-full object-contain transition-transform duration-700 opacity-80 mix-blend-multiply" />
                         </div>
-                        <div class="p-6 bg-white">
-                            <h3 class="text-xl serif-font font-bold text-[#4a4238] mb-2">{year.title}</h3>
-                            <p class="text-sm text-[#5a5248] leading-relaxed mb-4">{year.description}</p>
-                            <div class="inline-flex items-center text-sm text-[#a89f91] font-medium group-hover:text-[#4a4238] transition-colors">
-                                Erinnerungen ansehen
-                                <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                                </svg>
-                            </div>
+                        <div class="p-3 md:p-6 bg-white">
+                            <h3 class="text-base md:text-xl serif-font font-bold text-[#4a4238] mb-1 md:mb-2">{year.title}</h3>
+                            <p class="text-xs md:text-sm text-[#5a5248] leading-snug md:leading-relaxed mb-0">{year.description}</p>
                         </div>
                     </a>
                 ))}
             </div>
         </section>
         
-        <footer id="main-footer" class="w-full py-6 text-center text-[#a89f91] text-xs md:text-sm bg-[#faf9f6] z-20 opacity-0 translate-y-4 transition-all duration-1000 ease-out pointer-events-none border-t border-[#f0eadd]">
+        <footer id="main-footer" class="w-full py-3 md:py-6 text-center text-[#a89f91] text-xs md:text-sm bg-[#faf9f6] z-20 opacity-0 translate-y-4 transition-all duration-1000 ease-out pointer-events-none border-t border-[#f0eadd]">
             <p>&copy; {new Date().getFullYear()} Familie Beck. Mit Liebe gemacht.</p>
         </footer>
 
