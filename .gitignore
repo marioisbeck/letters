@@ -6,3 +6,17 @@ line_art_images
 letters/felien/whatsapp_export
 letters/felien/images
 letters/felien/videos
+
+# OS
+.DS_Store
+
+# Node
+node_modules/
+dist/
+
+# Python
+__pycache__/
+venv/
+.venv/
+.env
+.astro/
