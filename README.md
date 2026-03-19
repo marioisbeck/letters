@@ -77,3 +77,18 @@ npm run dev
 ```
 
 The scrapbook will be available at `http://localhost:4321`.
+
+### Media Status Dashboard
+
+The scrapbook includes a hidden dashboard for managing media files (images and videos) that appear in the timeline. This is useful for reviewing the media and marking items that should be archived or need fixing.
+
+To access the dashboard:
+1. Run the scrapbook locally in development mode (`npm run dev`).
+2. Navigate to `http://localhost:4321/media-status`.
+
+In the dashboard, you can click the status icon on any media item to toggle its state:
+- **Keep** (default): The media will be displayed normally.
+- **Fix** (yellow): The media needs to be fixed (e.g., rotated, cropped).
+- **Archive** (red): The media should be removed from the public timeline.
+
+The statuses are saved in your browser's `localStorage`. You can view the raw JSON data at the bottom of the dashboard, which can be copied and provided to the AI to automatically update the timeline data files.

@@ -20,15 +20,20 @@ Dieses Jahr war voller wunderbarer Momente und Meilensteine. Einer der schönste
 
 *Dein Charakter in ein paar Worten*
 
-[Wähle drei Worte, die ihren Charakter in diesem Alter am besten beschreiben, und schreibe einen kurzen Satz dazu, warum.]
+- *Fröhlich:* Dein ansteckendes Lachen reißt einfach jeden mit!
+- *Ausgewogen:* Du bist nicht zu ruhig und nicht zu wild... einfach genau richtig. Unser Tiny-House-Nachbar Peter Melis hat dich sogar mal "das perfekte Kind" genannt.
+- *Entdeckungslustig:* Wenn du etwas Neues siehst, hörst oder mitmachst, dann möchtest du das oft gleich nochmal machen... und es nochmal ausprobieren und nochmal und nochmal :-)
 
 *Was du liebst (und was du absolut nicht magst)*
 
-[Was ist dein aktuelles Lieblingsessen? Welches Kuscheltier muss überall hin mit? Welches Lied hörst du am liebsten? Und was magst du gerade überhaupt nicht?]
+Als du anfangen durftest zu essen, waren Eier der absolute Kracher! Die gab es gefühlt immer. Irgendwann war es dann mal Banane... und dann wieder etwas anderes. Du hast sehr starke Favoriten... bis du eben neue starke Favoriten hast :-)
+Dein absolutes Lieblingskuscheltier war die "Jazz Kuh" (die Midden-Delfland Kuh), die du von der Gemeinde zur Geburt bekommen hast. Mama hat daraus eigentlich eine Rap-Kuh gemacht, sie aber trotzdem Jazz-Kuh genannt :-D. 
+Autofahren ging auch super. Und ich war richtig stolz darauf, dass du sogar während des Staubsaugens wunderbar schlafen konntest! Da wir in einem Tiny House wohnten, musste natürlich irgendwann gestaubsaugt werden. Wir haben das von Anfang an trainiert, und es hat super geklappt.
+Was du nicht mochtest? Eigentlich nur die Klassiker: wenn du müde wurdest, Bauchkrämpfe hattest oder hungrig warst. Ansonsten kann ich mich an nichts erinnern, was du nicht mochtest – du warst eigentlich immer an allem interessiert, was wir dir gezeigt haben.
 
 *Ein typischer Tag*
 
-[Beschreibe einen ganz normalen Tag in diesem Lebensjahr. Wann wachst du auf? Was ist unser morgendliches Ritual? Wie sieht der Alltag aus? Wie läuft das Zubettgehen ab?]
+Einen "typischen" Tag gab es in diesem ersten Jahr eigentlich nicht. Gefühlt hat sich alle zwei Monate alles bei dir verändert, und man konnte wieder ganz anders mit dir interagieren. Wir hatten am Anfang die App "The Wonder Weeks" – die war richtig super! Darin konnten wir mitverfolgen, in welchen mentalen Sprüngen du dich gerade befindest. Die kindliche Entwicklung im ersten Jahr ist wirklich faszinierend: Am Anfang siehst du nur Kontraste, dann lernst du Farben kennen, erkennst plötzlich Muster, greifst nach Dingen und beginnst schließlich, Zusammenhänge zu verstehen. Jeder dieser Sprünge war für dich anstrengend, aber danach konntest du die Welt wieder ein Stückchen mehr begreifen.
 
 *Unser Foto des Jahres*
 
@@ -36,21 +41,19 @@ Dieses Foto von uns beiden ist mein Lieblingsbild des Jahres. Es zeigt uns, wie 
 
 *Mama und Papa*
 
-[Wie geht es uns als Paar in diesem Jahr? Welches Abenteuer haben wir als Eltern gemeinsam gemeistert? Wie arbeiten wir als Team?]
+Deine Mama war in diesem Jahr ein absoluter Held! Vor allem am Anfang, da sie dich so lange wie es ging gestillt hat. Dadurch konnte ich jede Nacht ruhig schlafen – da ich auf dem rechten Ohr nicht so gut höre, schlief ich dann einfach oft auf meinem guten linken Ohr und konnte so herrlich durchschlafen. Deluxe :-)
+Ich bin in diesem Jahr einmal pro Woche über Nacht in Eindhoven gewesen. Damals fand ich das okay... aber heute würde ich das überhaupt nicht mehr wollen! So oft weg sein von dir und euch... 
+Du bist unser erstes Kind, und da muss man als Eltern so einige Sachen erst lernen. Aber wir haben das genossen! Wir sind einfach ein gutes Team. Wenn einer von uns eine Umarmung brauchte, hatte der andere die Energie und die Kapazität, sie zu geben.
 
 *Die Welt heute*
 
-[Was passiert gerade in der Welt? Was kostet eine Kugel Eis? Welche Musik läuft im Radio? Welche Technologie nutzen wir im Alltag?]
+Im Jahr 2024 schauen die Menschen noch den halben Tag auf flache, leuchtende Glasrechtecke, die wir "Smartphones" nennen. Wir tippen darauf mit unseren Daumen herum, um Nachrichten zu schreiben. Wenn wir irgendwohin wollen, setzen wir uns in große Metallkisten (Autos), von denen die meisten noch mit Benzin fahren und die wir komplett selbst lenken müssen! Und wenn wir abends entspannen wollen, schauen wir alle auf einen großen flachen Bildschirm an der Wand. Wahrscheinlich lachst du in 30 Jahren darüber, wie umständlich und physisch unsere Technik damals noch war.
 
 *Emotionen und persönliche Reflexion*
 
 Heute vor einem Jahr, als du das Licht der Welt erblickt hast, hatte ich zuerst extrem viel Angst, dass es dir nicht gut gehen könnte! Du warst bewegungslos in den Armen der Hebamme. Zum Glück hast du nach ein paar Sekunden angefangen zu schreien und hast mit deiner Mama und mir schmusen dürfen! Es war keine leichte Geburt. Sowohl du als auch deine Mama habt echt hart arbeiten müssen! Aber ihr habt das beide einfach Spitzenklasse gemeistert! Diesen Tag werde ich nie vergessen und zum Glück mit viel Freude darauf zurückblicken können. 
 
 Ich denke von mir selbst, dass ich nur Risiken eingehe, die ich gut einschätzen kann. Dieses Jahr bin ich jedoch ein Risiko eingegangen, das ich zutiefst bereue! Ich habe dich für einen Moment alleine auf dem hinteren Teil des Bettes gelassen, um dein Fläschchen zu holen, und du hattest beschlossen, dass du das Fußende erkunden wolltest. Gerade als ich zurückkam (und ich hatte mich extrem beeilt!), sah ich dich Hals über Kopf aus dem Bett fallen. Du glaubst gar nicht, wie dumm ich mir vorkam! Seitdem lasse ich dich nur noch Risiken eingehen, die nicht lebensgefährlich sind. Es tut mir leid, und ich werde alles daransetzen, dass dies nicht wieder vorkommt - was es seitdem auch nicht mehr ist. 
-
-*Lebensweisheit des Jahres*
-
-Ich möchte hier noch hinzufügen, dass ich es für extrem wichtig halte, Risiken im Leben einzugehen! Ohne Risiken können wir unsere Grenzen nicht ausloten, uns nicht entfalten und uns nicht selbst entdecken. Ich werde dich immer darin unterstützen, deine eigenen Grenzen zu testen und zu erweitern! (Nur jetzt noch ein paar Jahre ohne Lebensgefahr ;-) …)
 
 *Erinnerung an geliebte Menschen*
 
@@ -70,7 +73,9 @@ Ich möchte hier noch hinzufügen, dass ich es für extrem wichtig halte, Risike
 
 *Fragen an dein zukünftiges Ich*
 
-[Stelle ihr 2-3 direkte Fragen, die sie beantworten kann, wenn sie den Brief als Erwachsene liest.]
+1. Hast du die "Jazz Kuh" noch irgendwo als Erinnerung aufbewahrt?
+2. Bist du immer noch so begeisterungsfähig und entdeckungslustig, wenn du etwas Neues siehst?
+3. Und ganz wichtig: Gehören Eier immer noch zu deinen absoluten Lieblingsessen? Oder bist mittlerweile ein Carnivor oder Veganist?
 
 *Ausblick auf die Zukunft*
 
