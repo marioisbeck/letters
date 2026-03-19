@@ -8,6 +8,8 @@ interface MediaItem {
     rotation: string;
 }
 
+type MediaStatus = 'keep' | 'fix' | 'delete';
+
 interface AppStoreGalleryProps {
     items: MediaItem[];
 }
@@ -15,7 +17,69 @@ interface AppStoreGalleryProps {
 export default function AppStoreGallery({ items }: AppStoreGalleryProps) {
     const [selectedId, setSelectedId] = useState<string | null>(null);
     const [viewRotation, setViewRotation] = useState<number>(0);
+    const [mediaStatuses, setMediaStatuses] = useState<Record<string, MediaStatus>>({});
     const scrollRef = React.useRef<HTMLDivElement>(null);
+
+    // Load statuses from localStorage on mount
+    useEffect(() => {
+        try {
+            const stored = localStorage.getItem('mediaStatuses');
+            if (stored) {
+                setMediaStatuses(JSON.parse(stored));
+            }
+        } catch (e) {
+            console.error('Failed to load media statuses', e);
+        }
+    }, []);
+
+    const handleStatusClick = (e: React.MouseEvent, url: string) => {
+        e.stopPropagation();
+        setMediaStatuses(prev => {
+            const currentStatus = prev[url] || 'keep';
+            let nextStatus: MediaStatus = 'keep';
+            
+            if (currentStatus === 'keep') nextStatus = 'fix';
+            else if (currentStatus === 'fix') nextStatus = 'delete';
+            else if (currentStatus === 'delete') nextStatus = 'keep';
+            
+            const newStatuses = { ...prev };
+            if (nextStatus === 'keep') {
+                delete newStatuses[url];
+            } else {
+                newStatuses[url] = nextStatus;
+            }
+            
+            try {
+                localStorage.setItem('mediaStatuses', JSON.stringify(newStatuses));
+            } catch (e) {
+                console.error('Failed to save media statuses', e);
+            }
+            
+            return newStatuses;
+        });
+    };
+
+    const getStatusIcon = (status: MediaStatus) => {
+        if (status === 'fix') {
+            return (
+                <div className="bg-yellow-500 text-white rounded-full p-1.5 shadow-md border-2 border-white" title="Not displayed properly">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                </div>
+            );
+        }
+        if (status === 'delete') {
+            return (
+                <div className="bg-red-500 text-white rounded-full p-1.5 shadow-md border-2 border-white" title="Delete">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                </div>
+            );
+        }
+        return (
+            <div className="bg-black/30 text-white rounded-full p-1.5 shadow-sm border-2 border-white/50 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/50" title="Keep">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"></circle></svg>
+            </div>
+        );
+    };
 
     const selectedItem = items.find(item => item.id === selectedId);
 
@@ -99,11 +163,19 @@ export default function AppStoreGallery({ items }: AppStoreGalleryProps) {
                                         key={item.id}
                                         layoutId={`card-container-${item.id}`}
                                         onClick={() => setSelectedId(item.id)}
-                                        className={`relative w-full h-full rounded-[24px] overflow-hidden shadow-md cursor-pointer bg-gray-100 ${gridClass}`}
+                                        className={`relative w-full h-full rounded-[24px] overflow-hidden shadow-md cursor-pointer bg-gray-100 group ${gridClass}`}
                                         whileHover={{ scale: 0.98 }}
                                         whileTap={{ scale: 0.95 }}
                                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                                     >
+                                        {/* Status Toggle Button */}
+                                        <div 
+                                            className="absolute top-3 right-3 z-30"
+                                            onClick={(e) => handleStatusClick(e, item.url)}
+                                        >
+                                            {getStatusIcon(mediaStatuses[item.url] || 'keep')}
+                                        </div>
+
                                         {item.type === 'video' ? (
                                             <div className="relative w-full h-full pointer-events-none">
                                                 <motion.video 
