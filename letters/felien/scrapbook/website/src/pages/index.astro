@@ -75,70 +75,95 @@ const getYear = (dateStr) => {
                 height: 40vh;
             }
 
+            /* Mobile-first hero wrapper */
             #hero-wrapper {
                 position: absolute;
                 top: 0;
                 left: 50%;
-                /* 
-                  100vw / 0.4 = 250vw. 
-                  We make it 250vw wide so when scaled down by 0.4 it perfectly fits 100vw.
-                  This guarantees text won't wrap differently during the animation.
-                */
-                width: 250vw;
+                width: 100vw;
                 height: 100vh;
-                transform: translate(-50%, 5vh) scale(0.9);
+                transform: translate(-50%, -5vh) scale(1);
                 transform-origin: top center;
                 transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: flex-end; /* Push content to the bottom */
+                justify-content: flex-end;
+                overflow: hidden;
             }
             body.hero-scrolled #hero-wrapper {
-                transform: translate(-50%, 4vh) scale(0.4);
+                transform: translate(-50%, -15vh) scale(1);
+            }
+            @media (min-width: 769px) {
+                #hero-wrapper {
+                    width: 250vw;
+                    transform: translate(-50%, 5vh) scale(0.9);
+                    overflow: visible;
+                }
+                body.hero-scrolled #hero-wrapper {
+                    transform: translate(-50%, 4vh) scale(0.4);
+                }
             }
 
+            /* Mobile-first hero image container */
             #hero-image-container {
                 position: absolute;
-                bottom: 250px; /* Overlap with text */
-                left: 0;
-                width: 100%;
-                height: 80vh; /* Give it plenty of height */
+                bottom: 180px;
+                left: 50%;
+                margin-left: -125vw;
+                width: 250vw;
+                height: 80vh;
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
                 z-index: 0;
                 transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
                 transform-origin: bottom center;
+                transform: scale(1);
+            }
+            body.hero-scrolled #hero-image-container {
+                transform: scale(0.4);
+            }
+            @media (min-width: 769px) {
+                #hero-image-container {
+                    left: 0;
+                    margin-left: 0;
+                    width: 100%;
+                    bottom: 250px;
+                    transform: none;
+                }
+                body.hero-scrolled #hero-image-container {
+                    transform: none;
+                }
             }
             
             #hero-text-container {
                 position: relative;
                 z-index: 10;
                 text-align: center;
-                padding-bottom: 40px; /* Reduced from 80px to make room for arrow */
+                padding-bottom: 40px;
             }
             
+            /* Mobile-first text sizes */
             #hero-title {
-                font-size: 120px;
-                margin-bottom: 20px;
+                font-size: 45px;
+                margin-bottom: 10px;
                 line-height: 1.1;
                 white-space: nowrap;
-                /* Add a subtle text shadow so it pops when overlapping the image */
                 text-shadow: 0 4px 20px rgba(250, 249, 246, 0.8), 0 0 40px rgba(250, 249, 246, 0.9);
             }
-            @media (min-width: 768px) {
+            @media (min-width: 769px) {
                 #hero-title { font-size: 180px; margin-bottom: 30px; }
             }
 
             .hero-subtitle {
-                font-size: 30px;
-                margin-bottom: 30px;
-                letter-spacing: 0.4em;
+                font-size: 14px;
+                margin-bottom: 15px;
+                letter-spacing: 0.2em;
                 white-space: nowrap;
             }
-            @media (min-width: 768px) {
-                .hero-subtitle { font-size: 35px; margin-bottom: 40px; }
+            @media (min-width: 769px) {
+                .hero-subtitle { font-size: 35px; margin-bottom: 40px; letter-spacing: 0.4em; }
             }
             
             #hero-arrow-container {
@@ -214,37 +239,6 @@ const getYear = (dateStr) => {
                 box-shadow: 0 25px 50px -12px rgba(74, 66, 56, 0.15);
             }
 
-            /* Mobile Overrides */
-            @media (max-width: 768px) {
-                #hero-wrapper {
-                    width: 100vw;
-                    transform: translate(-50%, -5vh) scale(1);
-                }
-                body.hero-scrolled #hero-wrapper {
-                    transform: translate(-50%, -15vh) scale(1);
-                }
-                
-                #hero-title {
-                    font-size: 45px;
-                    margin-bottom: 10px;
-                }
-                .hero-subtitle {
-                    font-size: 14px;
-                    margin-bottom: 15px;
-                    letter-spacing: 0.2em;
-                }
-                
-                #hero-image-container {
-                    width: 250vw;
-                    left: 50%;
-                    margin-left: -125vw;
-                    bottom: 180px;
-                    transform: scale(1);
-                }
-                body.hero-scrolled #hero-image-container {
-                    transform: scale(0.4);
-                }
-            }
         </style>
 	</head>
 	<body class="antialiased h-screen overflow-hidden flex flex-col">
@@ -328,6 +322,7 @@ const getYear = (dateStr) => {
             document.addEventListener('DOMContentLoaded', () => {
                 let isScrolled = false;
                 const horizontalScroll = document.querySelector('.horizontal-scroll');
+
 
                 const setScrolled = (scrolled) => {
                     if (isScrolled === scrolled) return;
