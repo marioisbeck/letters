@@ -41,13 +41,11 @@ Dieses Foto von uns beiden ist mein Lieblingsbild des Jahres. Es zeigt uns, wie 
 
 *Mama und Papa*
 
-Deine Mama war in diesem Jahr ein absoluter Held! Vor allem am Anfang, da sie dich so lange wie es ging gestillt hat. Dadurch konnte ich jede Nacht ruhig schlafen – da ich auf dem rechten Ohr nicht so gut höre, schlief ich dann einfach oft auf meinem guten linken Ohr und konnte so herrlich durchschlafen. Deluxe :-)
-Ich bin in diesem Jahr einmal pro Woche über Nacht in Eindhoven gewesen. Damals fand ich das okay... aber heute würde ich das überhaupt nicht mehr wollen! So oft weg sein von dir und euch... 
-Du bist unser erstes Kind, und da muss man als Eltern so einige Sachen erst lernen. Aber wir haben das genossen! Wir sind einfach ein gutes Team. Wenn einer von uns eine Umarmung brauchte, hatte der andere die Energie und die Kapazität, sie zu geben.
+Deine Mama war in diesem Jahr ein absoluter Held! Da sie dich lange gestillt hat, konnte ich nachts oft auf meinem guten linken Ohr herrlich durchschlafen. Deluxe :-) Ich war anfangs einmal pro Woche über Nacht in Eindhoven, aber heute würde ich das nicht mehr wollen – so oft weg sein von euch... Als Eltern mussten wir vieles erst lernen, aber wir sind ein gutes Team. Wenn einer eine Umarmung brauchte, hatte der andere die Energie, sie zu geben.
 
 *Die Welt heute*
 
-Im Jahr 2024 schauen die Menschen noch den halben Tag auf flache, leuchtende Glasrechtecke, die wir "Smartphones" nennen. Wir tippen darauf mit unseren Daumen herum, um Nachrichten zu schreiben. Wenn wir irgendwohin wollen, setzen wir uns in große Metallkisten (Autos), von denen die meisten noch mit Benzin fahren und die wir komplett selbst lenken müssen! Und wenn wir abends entspannen wollen, schauen wir alle auf einen großen flachen Bildschirm an der Wand. Wahrscheinlich lachst du in 30 Jahren darüber, wie umständlich und physisch unsere Technik damals noch war.
+Im Jahr 2024 schauen die Menschen noch auf flache, leuchtende Glasrechtecke ("Smartphones") und tippen mit den Daumen darauf. Wir fahren in großen Metallkisten (Autos), die wir selbst lenken müssen, und entspannen abends vor einem flachen Bildschirm an der Wand. Wahrscheinlich lachst du in 30 Jahren darüber, wie umständlich unsere Technik damals war.
 
 *Emotionen und persönliche Reflexion*
 
@@ -65,23 +63,22 @@ Oft habe ich dieses Jahr mit dir in unserem Wohnzimmer getanzt! Am liebsten zu G
 
 *Dankbarkeit*
 
-Ich bin unendlich dankbar, dass du in mein Leben getreten bist. Du hast mir Kraft und Motivation gegeben, Dinge zu tun, die ich mir sonst vielleicht nicht zugetraut hätte. Für dich und auch für mich möchte ich der beste Papa sein, den du dir vorstellen kannst - jemand, den du gerne um dich hast und auf den du immer zählen kannst. Durch dich habe ich dieses Jahr Superkräfte bekommen! Ich habe ein Unternehmen gestartet, den Garten und das Haus auf Vordermann gebracht und noch vieles mehr! Danke für diese Superpower!
+Ich bin unendlich dankbar für dich. Du hast mir Kraft gegeben, Dinge zu tun, die ich mir sonst nicht zugetraut hätte. Ich möchte der beste Papa für dich sein. Durch dich habe ich dieses Jahr Superkräfte bekommen: Ich habe ein Unternehmen gestartet, Haus und Garten auf Vordermann gebracht und vieles mehr! Danke für diese Superpower!
 
 *Lebensweisheit des Jahres*
 
-Ich möchte hier noch hinzufügen, dass ich es für extrem wichtig halte, Risiken im Leben einzugehen! Ohne Risiken können wir unsere Grenzen nicht ausloten, uns nicht entfalten und uns nicht selbst entdecken. Ich werde dich immer darin unterstützen, deine eigenen Grenzen zu testen und zu erweitern! (Nur jetzt noch ein paar Jahre ohne Lebensgefahr ;-) …)
+Ich möchte hier noch hinzufügen, dass ich es für extrem wichtig halte, Risiken im Leben einzugehen! Ohne Risiken können wir unsere Grenzen nicht ausloten, uns nicht entfalten und uns nicht selbst entdecken. Ich werde dich immer darin unterstützen, deine eigenen Grenzen zu testen und zu erweitern! Nur jetzt noch ein paar Jahre ohne Lebensgefahr ;-)
 
 *Fragen an dein zukünftiges Ich*
 
 1. Hast du die "Jazz Kuh" noch irgendwo als Erinnerung aufbewahrt?
-2. Bist du immer noch so begeisterungsfähig und entdeckungslustig, wenn du etwas Neues siehst?
+2. Immer noch so begeisterungsfähig und entdeckungslustig, wenn du etwas Neues siehst?
 3. Und ganz wichtig: Gehören Eier immer noch zu deinen absoluten Lieblingsessen? Oder bist mittlerweile ein Carnivor oder Veganist?
 
 *Ausblick auf die Zukunft*
 
-Ich freue mich auf all die Abenteuer, die vor uns liegen. Es gibt noch so viel gemeinsam zu entdecken, zu lernen und zu erleben. Ich kann es kaum erwarten, zu sehen, wie du weiter wächst und die Welt erkundest. Wahrscheinlich fängst du nächstes Jahr an zu sprechen! Das wird was! Ich kann es kaum erwarten, dir Geschichten vorzulesen, dir deine Fragen zu beantworten und dir Fragen zu stellen!
-
-Liebe Felien, man hört andere Menschen das oft über ihre Kinder sagen, aber du bist wirklich das größte Geschenk, das ich mir je hätte wünschen können! Ich habe dich so unglaublich lieb und bin gespannt auf all die wunderbaren Zeiten, die noch vor uns liegen.
+Ich freue mich auf all die Abenteuer, die vor uns liegen. Wahrscheinlich fängst du nächstes Jahr an zu sprechen! Ich kann es kaum erwarten, dir Geschichten vorzulesen und gemeinsam die Welt zu erkunden.
+Liebe Felien, du bist wirklich das größte Geschenk, das ich mir je hätte wünschen können! Ich habe dich so unglaublich lieb.
 
 In Liebe, \
 Dein Paps

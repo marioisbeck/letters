@@ -26,27 +26,28 @@ Wir haben auch tolle Abenteuer außerhalb unseres Zuhauses erlebt. Ein echtes Hi
 
 - *Zielstrebig:* Das hast du beim Türmebauen bewiesen. Erst waren es nur zwei Steine, dann drei... und dann auf einmal immer mehr. Es war faszinierend zu sehen, wie du das mühsam gelernt und einfach nicht aufgegeben hast.
 - *Fokussiert:* Wenn du zum Beispiel probierst, einen Schlüssel in ein Schlüsselloch zu stecken, bist du völlig in deiner Welt. Es war oft sehr schwierig für mich, dir nicht direkt dabei helfen zu wollen. Aber dann hätte ich dir eine Lernmöglichkeit weggenommen, und wir probieren immer darauf zu achten, dass du selbst lernen kannst. Du bist so intrinsisch motiviert – wunderschön, behalte das immer bei!
+
+#v(2cm)
+
 - *Wissbegierig & Erkundend:* Du möchtest alles immer am liebsten selbst ausprobieren. So hast du zum Beispiel auch eine intrinsische Motivation fürs Saubermachen entwickelt, etwas, das ich sehr zu schätzen weiß und unterstütze :-) Natürlich "hilft" das nicht immer, aber manchmal schon. Du hast sogar ein kleines Besenset und machst damit auch immer sauber, wenn ich staubsauge – so süß!
 
 *Was du liebst (und was du absolut nicht magst)*
 
-Deine absolute Lieblingsaktivität in diesem Jahr? Trampolinspringen! Und natürlich auch Schaukeln... bei Oma im Garten und auch bei Opa bei den Nachbarn gab es eins. Das war immer ein ganz großer Spaß und du konntest es in vollen Zügen genießen!
-Auch Musik hat es dir angetan: Bei unserem verlängerten Familienwochenende bei Urgroßoma Ali in Groningen hast du deinen allerersten Song gesungen: "Let it Go" aus Frozen. Ein Moment purer Magie! Ich habe den Song öfter auf der Gitarre gespielt und als du mit Mama am spielen im Sandkasten warst und ich drinnen den Song gesungen habe, bist du aufgestanden und hast "Let it go" gesungen... Ich höre aber am liebsten, dass du "Daddy go" gesungen hast aus dem Video heraus :-)
-Zudem warst du super oft mit Mama im Garten am Arbeiten. Das hat dir so viel Spaß gemacht, dass Mama dir deine eigene Matsch-Küche in unserem Garten eingerichtet hat. Kein Wunder, dass ich dieses Jahr zugenommen habe - bei so viel "lekker" Essen, das du mir dort gezaubert hast!
+Deine Lieblingsaktivität dieses Jahr? Trampolinspringen! Und Schaukeln bei Oma und Opa. Das war immer ein großer Spaß.
+Auch Musik hat es dir angetan: Bei unserem Familienwochenende in Groningen hast du deinen allerersten Song gesungen: "Let it Go" aus Frozen. Ein Moment purer Magie! Ich höre aber am liebsten, wie du im Video "Daddy go" singst :-)
+Zudem warst du oft mit Mama im Garten. Das hat dir so viel Spaß gemacht, dass Mama dir eine Matsch-Küche eingerichtet hat. Kein Wunder, dass ich dieses Jahr zugenommen habe – bei so viel "lekker" Essen, das du mir dort gezaubert hast!
 
-Was du absolut nicht magst, ist vom Spielplatz nach Hause gehen zu müssen oder umzudrehen, wenn wir auf dem Dreirad eigentlich wieder in Richtung Zuhause müssen. Du bist einfach komplett auf Erkundung eingestellt! Wenn du ein bisschen müde bist, dann willst du am liebsten noch weiter rumrennen und Sachen entdecken. Du bist da aber eigentlich zu müde zu und kannst das selbst noch nicht gut regulieren. Dann helfen wir dir und bringen dich schnell ins Bettchen. Das ist ein Teil des Elterndaseins, den ich nicht einfach finde... den ich aber doch auch irgendwie mag... wo ich denke, dass ich dir etwas beibringen kann und dir helfen kann zu lernen, wo die Grenzen sind.
+Was du absolut nicht magst, ist vom Spielplatz nach Hause zu gehen oder mit dem Dreirad umzudrehen. Du bist komplett auf Erkundung eingestellt! Wenn du müde bist, willst du am liebsten weiterrennen. Da du das noch nicht gut regulieren kannst, helfen wir dir und bringen dich schnell ins Bettchen. Das ist ein Teil des Elterndaseins, den ich nicht einfach finde... wo ich dir aber helfen kann zu lernen, wo die Grenzen sind.
 
 *Ein typischer Tag*
 
-Um rund 7:00-7:30 wirst du wach (SUPER!!!! andere Kinder werden schon vor 6:00 Uhr wach :-) ... vielen Dank Felien für diese extra 1 - 1 1/2 Stunden Schlaf am Morgen :-). Dann wird erst nochmal kurz gekuschelt... und dann direkt nach unten und spielen. Irgendwo dazwischen probiert man dir die Windeln zu wechseln. Dann lekker zusammen frühstücken... das findet Papa nicht so einfach... denn du machst ne ziemlich große Sauerei :-) Verständlich... aber trotzdem... Papa hat es gerne sauber :-). 
+Um 7:00-7:30 wirst du wach (Danke für den extra Schlaf! :-). Nach kurzem Kuscheln geht's runter zum Spielen und Windeln wechseln. Dann lekker frühstücken – auch wenn du dabei eine ordentliche Sauerei machst, was Papa nicht immer leichtfällt :-). 
 
-Dann bringen wir dich zu Miriam, der Gastmutter. Dort spielst du mit den anderen Kindern (Jovi, Jake, Saar, Maia, und noch mehr). Wenn man dich dann um 17:30 rum wieder abholt, fällst du einem um den Hals und bist überglücklich, Papa oder Mama wiederzusehen. Dann fahren wir mit dem Fahrrad nach Hause. Beinahe jeden Tag sind wir dann noch eine Runde mit dem Dreirad um den Block gelaufen. Am Ende musste man dich und das Dreirad dann oft tragen - das haben wir natürlich meistens gerne gemacht, auch wenn es manchmal einfach anstrengend war :-D 
+Dann bringen wir dich zu Miriam, der Gastmutter, wo du mit den anderen Kindern spielst. Wenn wir dich um 17:30 abholen, fällst du uns überglücklich um den Hals. Danach fahren wir mit dem Fahrrad heim und drehen oft noch eine Runde mit dem Dreirad – bis wir dich und das Rad tragen müssen :-D. Ein festes Ritual: Beim Gemeinschaftshaus füttern wir immer mit großer Freude die Hühner!
 
-Außerdem war es ein festes Ritual: Jedes Mal, wenn wir zum Gemeinschaftshaus gegangen sind, mussten wir den Hühnern etwas zu essen geben. Du hast das mit so viel Freude gemacht :-)
+Zuhause spielst du weiter, während wir das Abendessen richten (wehe, es steht nicht um 18:00 auf dem Tisch!). Dein absolutes Lieblingsessen danach: Joghurt mit Rosinen und Obst-Püree. Dann wird noch kurz zusammen gespielt.
 
-Zuhause gehst du wieder direkt spielen und Papa und/oder Mama fangen an zu kochen oder aufzuwärmen. Dann gibt es Abendessen (und wenn das nicht um 18:00 auf dem Tisch ist, wirst du ein bisschen verärgert...). Dann natürlich Quark/Joghurt essen (ich schätze mal dein absolutes Lieblingsessen: Joghurt mit Rosinen und Obst-Püree). Danach wird manchmal noch kurz zusammen mit Papa und Mama gespielt (Türme bauen, Eisenbahn bauen, Dinge kleben, Hüpfgummis, etc...). 
-
-Um 19:00 gibt's dann ein Fläschchen und eine Geschichte (ein großer Hit war dieses Jahr "De Ridder Zonder Billen" - den ich dir öfter mal vorgerapped habe :-). Dann noch eben Zähne putzen... manchmal aufs Töpfchen und dann ins Bett und noch mehr Geschichten lesen... Bis jetzt schläfst du immer bei uns im Bett... das genieße ich unglaublich. Dich nachts zu umarmen ist etwas, an das ich denken werde, wenn es mir irgendwann einmal nicht so gut geht. Das waren die alltäglichen, aber unvergesslichen Momente für mich! Ich hab dich unglaublich lieb!
+Um 19:00 gibt's ein Fläschchen und eine Geschichte (ein Hit: "De Ridder Zonder Billen", den ich dir oft vorgerapped habe). Nach dem Zähneputzen und Töpfchen geht's ins Bett. Bis jetzt schläfst du immer bei uns... das genieße ich unglaublich. Dich nachts zu umarmen gibt mir so viel Kraft. Das sind die unvergesslichen Momente!
 
 *Unser Foto des Jahres*
 
@@ -64,33 +65,32 @@ Die Welt da draußen dreht sich rasend schnell. Künstliche Intelligenz beginnt 
 
 *Emotionen und persönliche Reflexion*
 
-Dieses Jahr habe ich gemerkt, wie sehr ich es liebe, dir beim Entdecken der Welt zuzusehen. Gleichzeitig war es eine Herausforderung, dir Grenzen aufzuzeigen, wenn du eigentlich zu müde warst, aber unbedingt weiter erkunden wolltest. Das ist ein Teil des Elterndaseins, den ich nicht einfach finde... den ich aber doch auch irgendwie mag... weil ich dir dabei helfen kann, dich selbst besser zu regulieren. Meine Erkenntnis daraus: Wahre Entdecker brauchen nicht nur unbändige Neugier, sondern auch Momente der Ruhe. Grenzen zu setzen bedeutet nicht, deine Freiheit einzuschränken, sondern dir einen sicheren Hafen zu bieten, in dem du Kraft für das nächste große Abenteuer sammeln kannst. Und die Nächte, in denen du bei uns im Bett schläfst und ich dich umarmen kann, geben mir unglaublich viel Kraft. Das sind die Momente, an die ich denken werde, wenn es mir irgendwann einmal nicht so gut geht.
+Dieses Jahr habe ich gemerkt, wie sehr ich es liebe, dir beim Entdecken der Welt zuzusehen. Gleichzeitig war es eine Herausforderung, dir Grenzen aufzuzeigen, wenn du eigentlich zu müde warst, aber unbedingt weiter erkunden wolltest. Das ist ein Teil des Elterndaseins, den ich nicht einfach finde... den ich aber doch auch mag... weil ich dir dabei helfen kann, dich besser zu regulieren. Meine Erkenntnis daraus: Wahre Entdecker brauchen nicht nur unbändige Neugier, sondern auch Momente der Ruhe. Grenzen zu setzen bedeutet nicht, deine Freiheit einzuschränken, sondern dir einen sicheren Hafen zu bieten, in dem du Kraft für das nächste große Abenteuer sammeln kannst.
 
 *Erinnerung an geliebte Menschen*
 
-Wenn ich dich so beim Aufwachsen und Entdecken beobachte, denke ich auch oft an deine Großeltern, die leider nicht mehr bei uns sind. Dein Opa Edze war ein unglaublich kluger Mann. Er hatte die besondere Gabe, sehr gut zuzuhören... aber er konnte auch sehr viel reden :-), genau wie sein Vater, dein Opa Jan. Edze war ein enorm warmherziger Mensch, der sich wirklich um andere gekümmert hat – Eigenschaften, die ich heute auch sehr stark in deiner Mama sehe. Ich bin mir sicher, er hätte es geliebt, sich einfach zu dir auf den Boden zu setzen, um mit dir diese hohen Türme zu bauen, oder mit dir spazieren zu gehen und dir voller Geduld neue Worte beizubringen.
+Wenn ich dich so beim Aufwachsen beobachte, denke ich oft an deine Großeltern. Dein Opa Edze war ein kluger, warmherziger Mann, der es geliebt hätte, mit dir Türme zu bauen. Deine Oma Petra war eine starke Frau, die sich so sehr Enkelkinder gewünscht hat und dich abgöttisch geliebt hätte. Beide haben uns viel von ihrem "Spirit" mitgegeben, den wir nun an dich weitergeben.
 
-Deine Oma Petra (meine Mama) hat Edze leider nie kennengelernt, aber ich glaube, die beiden hätten sich wunderbar verstanden. Auch sie war eine sehr schlaue Person – allerdings etwas impulsiver. Sie hat immer gesagt, was sie dachte, und war eine starke Frau mit einer gesunden Portion Selbstbewusstsein! Ich glaube, ich habe sehr viel von ihr mitbekommen. Schon früh hat sie mir gesagt, wie sehr sie sich Enkelkinder wünscht... und oh boy, sie hätte dich abgöttisch geliebt! Es hätte mich ehrlich gesagt nicht gewundert, wenn meine Eltern sich ein zweites Zuhause hier in den Niederlanden gekauft hätten oder sogar ganz hierher gezogen wären, nur um öfter in deiner Nähe sein zu können. Ich bin mir sicher, meine Mama hätte sehr geschätzt, wie wir dich bisher erziehen und aufwachsen lassen. Beide haben uns so viel von ihrem "Spirit" mitgegeben, den wir jetzt mit ganzem Herzen an dich weitergeben.
+*Dankbarkeit & Lebensweisheit*
 
-*Dankbarkeit*
-
-Ich bin sehr dankbar für die vielen alltäglichen, aber unvergesslichen Momente. Wir haben dieses Jahr zum Beispiel ein wunderschönes, verlängertes Familienwochenende bei Urgroßoma Ali in Groningen verbracht, an das ich mich sehr gerne erinnere. Es ist so wertvoll, dass du diese Momente mit der Familie erleben darfst. Dafür, dass ich bei so vielen deiner "ersten Male" dabei sein durfte – von deinen ersten Schritten bis zu deinem ersten gesungenen Lied. Und ich bin dankbar für die ruhigen Momente, wenn wir nachts zusammen im Bett liegen und ich dich einfach im Arm halten kann.
-
-*Lebensweisheit des Jahres*
-
-Wie beim Türmebauen gilt auch im Leben: Am Anfang ist es mühsam, und manchmal fallen die Dinge um. Aber wenn du dranbleibst, Stein für Stein, baust du am Ende etwas Großartiges auf. Und vergiss nie: Es ist wichtig, die Welt zu erkunden, aber genauso wichtig ist es, zu erkennen, wann man müde ist und eine Pause im sicheren Hafen braucht. So lange du mochtest, so lange ich kann und wann immer du willst bin ich gerne dein sicherer Hafen!
+Ich bin unendlich dankbar für unsere alltäglichen Momente, das Familienwochenende in Groningen und dass ich bei deinen "ersten Malen" dabei sein durfte. 
+Wie beim Türmebauen gilt: Manchmal fallen Dinge um, aber wenn du dranbleibst, baust du etwas Großartiges auf. Erkunde die Welt, aber erkenne auch, wann du eine Pause brauchst. Ich bin immer gerne dein sicherer Hafen!
 
 *Fragen an dein zukünftiges Ich*
 
-1. Singst du immer noch so gerne, vielleicht sogar noch "Let it Go"?
-2. Erinnerst du dich noch an das Gefühl, auf dem Trampolin zu fliegen?
-3. Kannst du inzwischen den "Ridder Zonder Billen" selbst rappen?
+1. Singst du immer noch so gerne "Let it Go"?
+2. Erinnerst du dich an das Gefühl auf dem Trampolin?
+3. Kannst du den "Ridder Zonder Billen" selbst rappen?
 
-*Ausblick auf die Zukunft*
+*Ausblick*
 
-Ich freue mich auf all die neuen Worte, die du lernen wirst, auf weitere Runden mit dem Dreirad (oder dann auch mit dem Zweirad?!) und auf noch mehr "lekker" Gerichte aus deiner Matsch-Küche. Vor allem freue ich mich darauf, dich weiter auf deiner Entdeckungsreise begleiten zu dürfen.
+Ich freue mich auf deine neuen Worte, weitere Dreirad-Runden und noch mehr "lekker" Gerichte aus der Matsch-Küche. 
 
-Liebe Felien, du bist und bleibst mein absolutes Lieblingsabenteuer. Mit dir wird das Leben einfach nie langweilig! Ich liebe dich von ganzem Herzen und bin so unfassbar gespannt auf all die kleinen und großen Expeditionen, die noch vor uns liegen. 
+#v(1.3cm)
+
+Liebe Felien, du bist mein absolutes Lieblingsabenteuer. Ich liebe dich von ganzem Herzen und bin gespannt auf alle Expeditionen, die noch vor uns liegen. 
+
+#v(0.5cm)
 
 In Liebe, \
 Dein Paps
