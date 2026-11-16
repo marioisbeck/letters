@@ -39,9 +39,9 @@ Gerade liebst du die Bücher von Dikkie Dik, dem niederländischen Kater. Den pa
 
 *Ein typischer Tag*
 
-Morgens frühstücken wir zusammen, dann geht's zu Miriam oder zu Zon, deiner Peuterspeelzaal. Einer holt dich ab, der andere macht Abendessen. Bis wir nach einer Stunde oder mehr vom Tisch aufstehen, ist oft schon fast Schlafenszeit. Manchmal denke ich dann: Das kann doch nicht sein... wir haben dich heute kaum gesehen! Ich genieße unsere Mahlzeiten, aber ich hätte so gerne noch Zeit, einfach mit dir abzuhängen.
+Morgens frühstücken wir zusammen, dann geht's zu Miriam oder zu Zon, dein Peuterspeelzaal. Einer holt dich ab, der andere macht Abendessen. Bis wir nach einer Stunde oder mehr vom Tisch aufstehen, ist oft schon fast Schlafenszeit. Manchmal denke ich dann: Das kann doch nicht sein... wir haben dich heute kaum gesehen! Ich genieße unsere Mahlzeiten, aber ich hätte so gerne noch Zeit, einfach mit dir zu spielen.
 
-Und ja, manchmal sind diese Abende echt anstrengend. Wenn du Mama haust, Dinge auf den Tisch wirfst oder nichts essen möchtest, fällt es mir nicht immer leicht, geduldig zu bleiben. Dabei weiß ich doch, dass du dann oft einfach völlig müde bist. Wenn noch Energie da ist, geht das alles viel leichter. Dir zu helfen, mit deinen Gefühlen umzugehen und Grenzen kennenzulernen, gehört eben auch zum Papasein... auch wenn ich manchmal lieber nur Quatsch mit dir machen würde.
+Und ja, manchmal sind diese Abende echt anstrengend. Wenn du einen von uns haust, Dinge auf den Tisch wirfst oder nichts essen möchtest, fällt es mir nicht immer leicht, geduldig zu bleiben. Dabei weiß ich doch, dass du dann oft einfach völlig müde bist. Wenn noch Energie da ist, geht das alles viel leichter. Dir zu helfen, mit deinen Gefühlen umzugehen und Grenzen kennenzulernen, gehört eben auch zum Papasein... auch wenn ich manchmal lieber nur Quatsch mit dir machen würde.
 
 Beim Schlafanzuganziehen schaffen wir das zum Glück trotzdem: Du flüchtest aufs Bett, ich werfe mich hinterher und erwische gerade noch einen Fuß... oder eben nicht! Du kicherst die ganze Zeit, und unser kleiner Tanz geht weiter. Sehr effizientes Zubettbringen :-D Danach wird gelesen. Und kurz vor deinem dritten Geburtstag haben wir nachts die Windel weggelassen. Die war ohnehin schon seit Monaten trocken!
 
@@ -49,11 +49,11 @@ Beim Schlafanzuganziehen schaffen wir das zum Glück trotzdem: Du flüchtest auf
 
 Mein Foto des Jahres ist ganz klar das vom 26. August im Trampolinpark. Wir lachen beide über das ganze Gesicht! Du wolltest mit mir aus über zwei Metern Höhe auf ein Luftkissen springen... obwohl dir das schon Angst gemacht hat. Und dann sind wir zusammen gesprungen!
 
-Genau das liebe ich an dem Bild: unsere Energie zusammen, dein Vertrauen in mich und vor allem dein Vertrauen in dich selbst. Das musste ich mir über viele Jahre erst erarbeiten. Ich möchte dir so gerne mitgeben, dass es völlig okay ist, wenn etwas nicht klappt! Manchmal hast du damit einfach die Grenze gefunden, an der du wirklich etwas Neues lernen kannst. Dann probierst du es eben nochmal. Ich wünsche dir, dass du dich mit diesem Selbstvertrauen auf den Weg machst und dein eigenes, selbstständiges Leben gestaltest. Ich bin so wahnsinnig stolz auf dich!
+Genau das liebe ich an dem Bild: unsere Energie zusammen, dein Vertrauen in mich und vor allem dein Vertrauen in dich selbst. Ich möchte dir so gerne mitgeben, dass es völlig okay ist, wenn etwas nicht klappt! Manchmal hast du damit einfach die Grenze gefunden, an der du wirklich etwas Neues lernen kannst. Dann probierst du es eben nochmal. Ich wünsche dir, dass du dich mit diesem Selbstvertrauen auf den Weg machst und dein eigenes, selbstständiges Leben gestaltest. Ich bin so wahnsinnig stolz auf dich!
 
 *Dankbarkeit*
 
-Meinen halben Tag mit dir würde ich für nichts auf der Welt hergeben. Trampolinpark, Monkey Town, einfach zusammen coole Dinge machen... das ist für mich absolute Quality Time! Und ich bin auch dankbar, dass du beim Putzen und Werkeln dabei sein möchtest. Zu deinem Geburtstag gibt's ein eigenes Trampolin. Dafür muss Papa zwei Kubikmeter Erde von Hand bewegen... du bekommst das Trampolin, ich das Fitnessprogramm :-D
+Meinen halben Tag mit dir würde ich für nichts auf der Welt hergeben. Trampolinpark, Monkey Town, einfach zusammen coole Dinge machen... das ist für mich absolute Quality Time! Und ich bin auch dankbar, dass du beim Putzen, Aufräumen und Arbeiten dabei sein möchtest. Zu deinem Geburtstag gab es dann ein eigenes Trampolin. Dafür musste Papa zwei Kubikmeter Erde von Hand bewegen... du bekommst das Trampolin, ich das Fitnessprogramm :-D
 
 #pagebreak()
 
@@ -101,7 +101,7 @@ Jetzt liegen deine neue Schule und das Leben als große Schwester vor dir. Du hi
 
 Und mit dir möchte ich noch viele, viele, viele coole Dinge erleben! Felien, meine Erstgeborene, meine großartige Tochter... für diese Momente werde ich Reisen absagen und Arbeit liegen lassen.
 
-Ich habe dich so wahnsinnig lieb!
+Ich habe dich so ungalaublich lieb!
 
 In Liebe, \
 Dein Paps
