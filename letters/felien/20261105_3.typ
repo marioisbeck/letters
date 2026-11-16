@@ -6,8 +6,8 @@
   line_art_images: (
     (path: "/line_art_images/felien_2026_cycling_transparent.png", height: 5.25cm),
     (path: "/line_art_images/felien_2026_trampoline_transparent.png", height: 5.25cm),
-    (path: "/line_art_images/felien_2026_family_italy_transparent.png", height: 9.33cm),
-    (path: "/line_art_images/felien_2026_portrait_transparent.png", height: 9.45cm),
+    (path: "/line_art_images/felien_2026_family_italy_transparent.png", height: 8cm),
+    (path: "/line_art_images/felien_2026_portrait_transparent.png", height: 5.25cm),
   ),
   line_art_opacity: 80%,
   line_art_size: 7cm,
@@ -31,7 +31,7 @@ Mutig, fürsorglich und einfallsreich. Du willst schwierige Dinge ausprobieren, 
 
 *Was du liebst*
 
-Trampolinspringen steht weiterhin ganz oben. Zu Hause ist dein ehemaliges Blumenbeet als Matschküche kaum zu schlagen: Du kochst Essen und machst „ijsjes“, von denen wir natürlich probieren dürfen. Dazu kommen Schwimmen, Pfützen, Duplo-Rutschen, richtiges Eis und dein Apie Aap.
+Trampolinspringen steht weiterhin ganz oben. Zu Hause ist dein ehemaliges Blumenbeet als Matschküche kaum zu schlagen: Du kochst Essen und machst „ijsjes“, von denen wir natürlich probieren dürfen. Dazu kommen Schwimmen, Pfützen, Duplo-Rutschen, richtiges Eis und dein Apie Aap. Und dein geliebtes Lied „Lekker eigenwijs“ von Kinderen voor Kinderen passt zu dir!
 
 Gerade liebst du Dikkie Dik, den niederländischen Kater. Sein Kuscheltier haben wir aus der Bibliothek ausgeliehen. Irgendwann muss es zurück - ich bin gespannt, wie das wird! Und „Bobby wordt grote broer“ passt wunderbar zu uns: Um den 23. Dezember 2026 erwarten wir deinen kleinen Bruder. Bald bist du selbst die Große!
 
@@ -59,31 +59,31 @@ Meinen halben Tag ganz mit dir möchte ich gegen nichts auf der Welt eintauschen
 
 *Mama und Papa*
 
-Dieses Jahr hat uns auch als Paar gefordert. Mama hat mit ihrem Selbstvertrauen gerungen und mit der Frage, was sie beruflich machen möchte und was ihr Sinn und Freude gibt. Oft kam sie ohne Energie nach Hause, und dann warteten noch Abendessen, Zubettbringen, Geschirr, Aufräumen und alles, was unser Leben zusammenhält.
+Dieses Jahr hat uns auch als Paar gefordert. Mama hat mit ihrem Selbstvertrauen und Fragen nach beruflicher Richtung und Sinn gerungen. Oft kam sie ohne Energie nach Hause, und dann warteten Zubettbringen, Geschirr und Haushalt. In unseren „DreamTeam“-Gesprächen, die ich vorbereitet habe, suchten wir gemeinsam danach, was ihr Kraft nimmt und Freude geben könnte. Sie geht ihre Hindernisse nun mit psychologischer Unterstützung an. Das finde ich mutig.
 
-Ich wiederum habe beruflich noch nie so wenig verdient und mich zugleich noch nie so zu Hause gefühlt in dem, was ich tue. Ich versuche, ein Unternehmen aufzubauen: zunächst mit souveräner KI für Unternehmen, später mit der Idee, PFAS vor Ort zu konzentrieren und zu zerstören. Viel Aufbruch, viel Unsicherheit.
+Ich habe beruflich noch nie so wenig verdient und mich zugleich noch nie so zu Hause gefühlt. Mein Versuch, ein Unternehmen aufzubauen, führte mich von souveräner KI für Unternehmen zur Konzentration und Zerstörung von PFAS vor Ort. Viel Aufbruch, viel Unsicherheit. Gemeinsam haben wir auch Schulen für dich besucht und überlegt, welche Umgebung wir dir wünschen. Wie schön, diese Verantwortung mit Mama zu teilen.
 
-In unseren „DreamTeam“-Gesprächen, die ich vorbereitet habe, haben wir viel darüber gesprochen, was Mama Kraft nimmt und was ihr helfen könnte, wieder mehr Freude zu empfinden. Sie hat sich auf den Weg gemacht, ihre Hindernisse mit psychologischer Unterstützung anzugehen. Das finde ich mutig. Auch wir Erwachsenen lernen noch, wie wir mit uns selbst und miteinander gut umgehen.
-
-Und wir haben gemeinsam Schulen für dich besucht, überlegt und entschieden, welche Umgebung wir dir zum Aufwachsen wünschen. Bei solchen Entscheidungen spüre ich besonders, wie schön es ist, diese große Verantwortung mit deiner Mama zu teilen.
+Dabei begleitet mich etwas, das Oma Petra damals Opa Michael und mir gesagt hat: Er dürfe wieder jemanden finden und glücklich sein. Heute gehört Ulrike zu seinem Leben, und ich glaube, Oma Petra hätte sich über sein Glück gefreut. Ihr Gedanke hilft mir auch im Alltag: Selbst wenn es schwer ist, möchte ich Kraft fürs Lachen und schöne Erlebnisse aufbringen. Manchmal entsteht die Energie erst dabei. So genießen wir unser Leben schon auf dem Weg zu unseren Zielen und schöpfen Mut, etwas zum Guten zu verändern.
 
 *Was du in mir bewegst*
 
-Als Mama zum ersten Mal eine Woche ohne dich verreist war, hast du sie sehr vermisst. Und dann sagtest du: „Soms moet je huilen in het leven, maar nu ben ik weer vrolijk.“ Manchmal muss man im Leben weinen, aber jetzt bin ich wieder fröhlich. Du warst noch nicht einmal drei. Dieser Satz hat mich tief berührt. Du hast deiner Traurigkeit Platz gegeben und konntest danach wieder Freude spüren.
+Als Mama zum ersten Mal eine Woche ohne dich verreist war, hast du sie sehr vermisst. Dann sagtest du: „Soms moet je huilen in het leven, maar nu ben ik weer vrolijk.“ Manchmal muss man im Leben weinen, aber jetzt bin ich wieder fröhlich. Du warst noch nicht einmal drei. Das hat mich tief berührt: Du hast deiner Traurigkeit Platz gegeben und konntest danach wieder Freude spüren.
 
-Ein paar Tage vor deinem Geburtstag lagen wir kuschelnd im Bett. Du umarmtest mich und sagtest: „Ik wil dat je bij mij blijft aaaaa...“ Dieses „a“ wurde immer länger und lauter, fast ein Schrei. Ich dachte schon, dir täte etwas weh. Und dann kam das Ende des Wortes: „...altijd!“ Für immer. Ich musste lachen und hatte gleichzeitig Tränen in den Augen. Wie viel Liebe in so einen kleinen Satz passen kann.
+Ein paar Tage vor deinem Geburtstag lagen wir kuschelnd im Bett. Du umarmtest mich: „Ik wil dat je bij mij blijft aaaaa...“ Das „a“ wurde immer länger und lauter, fast ein Schrei. Ich dachte schon, dir täte etwas weh. Dann kam das Ende des Wortes: „...altijd!“ Für immer. Ich musste lachen und hatte Tränen in den Augen. Wie viel Liebe in so einen kleinen Satz passen kann.
 
-Ich wünsche dir, dass du dir diese Offenheit bewahrst. Dass du weinen kannst, wenn dir danach ist, und dich der Freude hingibst, wenn sie wiederkommt. Dass du aus eigenem Antrieb neugierig bleibst, Fragen stellst und Lust hast, Neues zu lernen. Genieße dein Leben, Felien. Koste es aus, mit allem, was dazugehört. Es ist so wunderschön, dich dabei kennenzulernen.
+Ich wünsche dir, dass du dir diese Offenheit bewahrst. Dass du weinen kannst und dich der Freude hingibst, wenn sie wiederkommt. Dass du aus eigenem Antrieb neugierig bleibst, Fragen stellst und Neues lernen möchtest. Genieße dein Leben, Felien. Koste es aus, mit allem, was dazugehört. Es ist wunderschön, dich dabei kennenzulernen.
 
 #pagebreak()
 
 *Die Menschen, die zu uns gehören*
 
-Zu deinem Jahr gehören Besuche bei Opa Michael, Oma Jolandas Garten, Opa Michaels 75. Geburtstag und unsere große Patchworkfamilie: Bonus-Oma Ulrike, Anika, Niels, Ronja und Finia. Es ist schön, wie viele Menschen dich aufwachsen sehen und dich liebhaben.
+Zu deinem Jahr gehören Besuche bei Opa Michael, Oma Jolandas Garten, Opa Michaels 75. Geburtstag und unsere große Patchworkfamilie: Bonus-Oma Ulrike, Anika, Niels, Ronja und Finia.
 
-Manchmal erwische ich mich bei dem Gedanken, wie sehr Oma Petra es geliebt hätte, dich beim Entdecken und Großwerden zu begleiten. Wie oft sie wohl hier gewesen wäre. Dann fehlt sie mir sehr. Auch von Opa Edze möchte ich dir erzählen, damit du die Menschen kennenlernen kannst, die zu deiner Geschichte gehören.
+Wie oft Oma Petra wohl hier gewesen wäre! Ich sehe sie förmlich mit dir Duplo spielen. Die Sets meiner Kindheit hat sie ordentlich in ihren Originalkartons aufbewahrt, alles für mögliche Enkelkinder. Wie gerne hätte sie sie mit dir ausgepackt und dich beim Entdecken begleitet. Sie fehlt mir sehr.
 
-// Weitere persönliche Erinnerungen an Oma Petra und Opa Edze ergänzt Mario später.
+Durch ihr Essen ist sie neuerdings wieder mehr bei uns. Ihr wunderbares Word-Kochbuch möchte ich dir einmal weitergeben. Unser persönlicher KI-Agent Quill hilft uns bei der wöchentlichen Essensplanung und Vorbereitung, immer mit einem Gericht von Oma Petra. Vielleicht entsteht daraus ein Kochbuch: ihre Originalrezepte, manchmal mit Fleisch, jeweils neben einer veganen, „gregorisierten“ Variante nach Dr. Greger. Mal sehen, ob ich das schaffe :-)
+
+Auch Opa Edze hätte so gerne mit dir am Tisch gesessen, gezeichnet und dir die Welt erklärt. Ich habe seine Neugier und seine kenntnisreichen Kommentare immer genossen. Er kochte gerne und hätte mit Freude für dich gekocht. Wenn wir lesen, wie Bobbi Beer bei seinen Großeltern übernachtet, denke ich daran, wie sehr auch er solche Tage mit dir geliebt hätte.
 
 *Lebensweisheit des Jahres*
 
@@ -97,9 +97,9 @@ Im Januar habe ich dir einmal erklärt, wie man fair teilt. Danach hast du deine
 
 *Ausblick auf die Zukunft*
 
-Vor uns liegen deine neue Schule, dein kleiner Bruder und so viele Gespräche, von denen ich heute noch nichts ahne. Ich freue mich darauf, dich als große Schwester zu erleben. Du hilfst schon der Hebamme, deinen Bruder in Mamas Bauch zu untersuchen und danach das Gel abzuwischen.
+Vor uns liegen deine neue Schule, dein kleiner Bruder und so viele Gespräche! Du hilfst schon der Hebamme, deinen Bruder in Mamas Bauch zu untersuchen und danach das Gel abzuwischen. Ich freue mich darauf, dich als große Schwester zu erleben.
 
-Ich möchte noch viele, viele, viele großartige Erlebnisse mit dir teilen! Diese Zeit werde ich immer hüten, Felien, meine Erstgeborene, meine wundervolle Tochter. Für solche Momente mit dir werde ich Reisen absagen und Arbeit liegen lassen. Ich möchte mit dir unterwegs sein, lachen und Erinnerungen sammeln, die uns durchs Leben begleiten.
+Ich möchte noch viele, viele, viele großartige Erlebnisse mit dir teilen, Felien, meine Erstgeborene, meine wundervolle Tochter! Für solche Momente werde ich Reisen absagen und Arbeit liegen lassen. Unsere gemeinsame Zeit werde ich immer hüten.
 
 Ich habe dich unendlich lieb.
 
