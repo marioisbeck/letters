@@ -43,6 +43,8 @@ The author speaks and writes in English, Dutch, and German. Texts often blend th
 
 ## Learned User Preferences
 - **Letter Format:** Always create letters in `.typ` format using the `template.typ` style (e.g., `#import "/templates/template.typ": letter` and `#show: letter.with(...)`). Do not use Markdown (`.md`) for letters.
+- **PDF Location:** Compile each letter's PDF next to its `.typ` source, using the same filename stem.
+- **Opening Joke:** Include a personal joke in the first paragraph that relates to the letter's overall theme or to a specific memory, activity, or detail in it.
 - **Line Art Conversion:** When converting images from `raw_images` to `line_art_images`, strictly focus on the people in the image and completely disregard/remove the background and any other objects.
 - **Line Art Integration:** When the user wants to add line art to a letter, use the `scripts/add_line_art.py` script. This script automatically processes the image to make its background transparent, and updates the `.typ` file so the text elegantly flows around a rectangular block containing the image. The default image size is structurally set to 150% (12cm x 12cm) in the bottom right corner, but can be adjusted using the `--size` parameter.
 

@@ -7,7 +7,7 @@
 
 Liebe Felien,
 
-alles Liebe und Gute zu deinem [Alter, z.B. 4.] Geburtstag! [Hier ein schlechter Papa-Witz, z.B.: Was sagt der eine Luftballon zum anderen? Ich platze vor Freude!] Es ist unglaublich, wie schnell auch dieses Jahr vergangen ist, und ich freue mich so sehr, diesen besonderen Tag mit dir feiern zu dürfen.
+alles Liebe und Gute zu deinem [Alter, z.B. 4.] Geburtstag! [Erfinde hier im ersten Absatz einen persönlichen Papa-Witz, der zum übergreifenden Thema des Briefes oder zu einer darin erzählten Erinnerung, Aktivität oder einem Detail passt.] Es ist unglaublich, wie schnell auch dieses Jahr vergangen ist, und ich freue mich so sehr, diesen besonderen Tag mit dir feiern zu dürfen.
 
 *Rückblick auf das vergangene Jahr*
 
