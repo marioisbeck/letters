@@ -45,3 +45,22 @@ The author speaks and writes in English, Dutch, and German. Texts often blend th
 - **Letter Format:** Always create letters in `.typ` format using the `template.typ` style (e.g., `#import "/templates/template.typ": letter` and `#show: letter.with(...)`). Do not use Markdown (`.md`) for letters.
 - **Line Art Conversion:** When converting images from `raw_images` to `line_art_images`, strictly focus on the people in the image and completely disregard/remove the background and any other objects.
 - **Line Art Integration:** When the user wants to add line art to a letter, use the `scripts/add_line_art.py` script. This script automatically processes the image to make its background transparent, and updates the `.typ` file so the text elegantly flows around a rectangular block containing the image. The default image size is structurally set to 150% (12cm x 12cm) in the bottom right corner, but can be adjusted using the `--size` parameter.
+
+## Personal repository delivery
+
+This is Mario's personal repository (`marioisbeck/letters`). Default:
+**edit → check → commit → push directly to `main`**.
+
+An implementation or fix request authorizes scoped commits and a normal push
+without another permission question. Honor explicit local-only, no-push,
+draft-only or advice-only limits. PRs, workbench branches, release branches and
+second-agent reviews are optional. Use isolation when useful, then integrate
+owned changes onto `main`. This supersedes older Gitflow or mandatory-PR
+instructions for this personal repository.
+
+Preserve dirty work, other workers and existing branches. Stage only owned
+paths or hunks, run relevant checks and secret scans, keep hooks active, and
+verify the remote commit after pushing. Never force-push `main` or bypass
+a guard. Report the commit, checks and push status. Create version bumps and
+release tags only for requested releases. Agent-launch, connector and deployment
+approval boundaries remain separate.
