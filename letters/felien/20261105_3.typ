@@ -6,7 +6,7 @@
   line_art_images: (
     (path: "/line_art_images/felien_2026_cycling_transparent.png", height: 5.25cm),
     (path: "/line_art_images/felien_2026_trampoline_transparent.png", height: 5.25cm),
-    (path: "/line_art_images/felien_2026_family_italy_transparent.png", height: 8cm),
+    (path: "/line_art_images/felien_2026_family_italy_transparent.png", height: 5.25cm),
     (path: "/line_art_images/felien_2026_portrait_transparent.png", height: 5.25cm),
   ),
   line_art_opacity: 80%,
@@ -23,7 +23,7 @@ Deine Schnuller hast du am 25. März im Laden abgegeben. Einen so vertrauten Beg
 
 Und dann diese Schaukel in Santo Stefano di Sessanio! Monatelang habe ich dich angeschubst und erklärt, wie du selbst Schwung holen kannst. Dann sind wir im Italienurlaub, nur du und ich an irgendeiner Schaukel... und auf einmal machst du es einfach selbst! Ich stand daneben und konnte es kaum glauben. Wie funktioniert das in deinem Kopf? Mit Stützrädern kannst du Fahrrad fahren, auf deinem „loopfiets“ hältst du super das Gleichgewicht. Jetzt müssen diese beiden Dinge noch zusammenkommen. Ich bin mir sicher, dass du das kannst... irgendwann macht es klick! Mich fasziniert, wie du lernst, und ich bin so unglaublich froh, bei diesen Schritten dabei sein zu dürfen.
 
-Reißverschlüsse, dein neues Bett mit Bettdecke, die ersten Schritte Richtung Vorschule... ganz schön viel für ein Jahr!
+Dein neues Bett mit Bettdecke und die ersten Schritte Richtung Vorschule... ganz schön viel für ein Jahr!
 
 *Dein Charakter in ein paar Worten*
 
@@ -63,8 +63,6 @@ Für Mama und mich war dieses Jahr nicht ganz einfach. Mama hat viel darüber na
 
 Bei mir ist es beruflich irgendwie verrückt: Noch nie habe ich so wenig verdient und mich gleichzeitig so wohl mit meiner Arbeit gefühlt! Ich versuche, ein Unternehmen aufzubauen, erst mit souveräner KI für Unternehmen, inzwischen mit der Konzentration und Zerstörung von PFAS vor Ort. Und wir haben gemeinsam Schulen für dich angeschaut und überlegt, wo du dich wohlfühlen und lernen könntest.
 
-Ich denke oft an etwas, das Oma Petra damals Opa Michael und mir gesagt hat: Er dürfe wieder jemanden finden und glücklich sein. Dass Ulrike heute zu seinem Leben gehört, nimmt für mich nichts von unserer Liebe zu Oma Petra weg. Auch wenn es schwierig ist, möchte ich mit euch Spaß haben und unser Leben genießen. Manchmal muss ich dafür Energie aufbringen, die ich eigentlich gar nicht habe... und hinterher geht es uns allen besser. Wir arbeiten an unseren Zielen und dürfen es uns auf dem Weg dahin schon schön machen!
-
 *Was du in mir bewegst*
 
 Als Mama zum ersten Mal eine Woche ohne dich verreist war, hast du sie sehr vermisst. Dann sagtest du: „Soms moet je huilen in het leven, maar nu ben ik weer vrolijk.“ Manchmal muss man im Leben weinen, aber jetzt bin ich wieder fröhlich. Du bist noch nicht einmal drei und sagst so etwas... das hat mich echt tief berührt!
@@ -73,11 +71,13 @@ Ein paar Tage vor deinem Geburtstag lagen wir kuschelnd im Bett. Du umarmst mich
 
 Behalte dir das bei, Felien: traurig sein können und dann wieder voller Freude ins Leben springen. Ich wünsche dir, dass du immer so von dir aus neugierig bleibst, Dinge verstehen und Neues lernen möchtest. Es gibt so viel zu entdecken! Genieße dein Leben in vollen Zügen, hab Spaß, lebe es!
 
-#pagebreak()
-
 *Die Menschen, die zu uns gehören*
 
 Zu unserem Jahr gehörten Oma Jolandas Garten, Besuche bei Opa Michael und sein 75. Geburtstag. Und natürlich unsere große Patchworkfamilie mit Bonus-Oma Ulrike, Anika, Niels, Ronja und Finia.
+
+Ich denke oft an etwas, das Oma Petra damals Opa Michael und mir gesagt hat: Er dürfe wieder jemanden finden und glücklich sein. Dass Ulrike heute zu seinem Leben gehört, nimmt für mich nichts von unserer Liebe zu Oma Petra weg. Auch wenn es schwierig ist, möchte ich mit euch Spaß haben und unser Leben genießen. Manchmal muss ich dafür Energie aufbringen, die ich eigentlich gar nicht habe... und hinterher geht es uns allen besser. Wir arbeiten an unseren Zielen und dürfen es uns auf dem Weg dahin schon schön machen!
+
+#pagebreak()
 
 Oft erwische ich mich bei dem Gedanken, wie sehr Oma Petra es geliebt hätte, dich jetzt zu erleben. Wie oft sie wohl hier gewesen wäre! Die Duplo-Sets meiner Kindheit hat sie ordentlich in ihren Originalkartons aufgehoben... für mögliche Enkelkinder. Ich sehe sie richtig vor mir, wie sie mit dir baut. Das hätte ich euch beiden so sehr gewünscht!
 
