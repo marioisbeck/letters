@@ -15,75 +15,75 @@
 
 Liebe Felien,
 
-alles Liebe zu deinem dritten Geburtstag! Welches Tier springt am höchsten? Der Floh! Wobei ich mir da bei dir nicht mehr so sicher bin :-) Was für ein Jahr voller kleiner und großer Schritte. Ein paar davon möchte ich für dich aufbewahren.
+alles Liebe und Gute zu deinem dritten Geburtstag! Was sagt Papa, wenn du zum Trampolinpark möchtest? „Ich bin schon auf dem Sprung!“ (Drittes Jahr, dritter Papa-Witz... ich bleibe da konsequent!) Schon drei! Ich finde es unglaublich, was du inzwischen alles kannst.
 
 *Rückblick auf das vergangene Jahr*
 
-Am 25. März hast du deine Schnuller im Laden abgegeben. Einen so vertrauten Begleiter loszulassen, fand ich wirklich beeindruckend. Und seitdem hast du keinen einzigen mehr benutzt! Dazu kamen deine WC-Diplome. Ich bin so stolz darauf, wie selbstständig du wirst!
+Deine Schnuller hast du am 25. März im Laden abgegeben. Einen so vertrauten Begleiter loszulassen... das fand ich wirklich beeindruckend! Seitdem hast du keinen einzigen mehr benutzt. Und dann noch deine WC-Diplome. Du wirst echt groß!
 
-Einen Moment werde ich besonders gut aufbewahren: Wir waren im Urlaub in Santo Stefano di Sessanio in Italien, nur du und ich an einer ganz gewöhnlichen Schaukel. Monatelang hatte ich dich angeschubst und erklärt, wie du selbst Schwung holen kannst. Und dort hast du plötzlich einfach allein geschaukelt! Ich stand daneben und staunte. Was war da gerade in deinem Kopf zusammengekommen? Du fährst mit Stützrädern und hältst auf dem Laufrad wunderbar das Gleichgewicht. Beides auf einem Fahrrad zu verbinden, kommt noch. Ich habe keinen Zweifel daran. Mich fasziniert, wie du lernst, in deinem Tempo, manchmal scheinbar aus dem Nichts. Und ich bin so glücklich, bei diesen Schritten dabei sein zu dürfen.
+Und dann diese Schaukel in Santo Stefano di Sessanio! Monatelang habe ich dich angeschubst und erklärt, wie du selbst Schwung holen kannst. Dann sind wir im Italienurlaub, nur du und ich an irgendeiner Schaukel... und auf einmal machst du es einfach selbst! Ich stand daneben und konnte es kaum glauben. Wie funktioniert das in deinem Kopf? Mit Stützrädern kannst du Fahrrad fahren, auf deinem „loopfiets“ hältst du super das Gleichgewicht. Jetzt müssen diese beiden Dinge noch zusammenkommen. Ich bin mir sicher, dass du das kannst... irgendwann macht es klick! Mich fasziniert, wie du lernst, und ich bin so unglaublich froh, bei diesen Schritten dabei sein zu dürfen.
 
-Ganz nebenbei hast du Reißverschlüsse gemeistert, ein neues Bett mit Bettdecke bekommen und die ersten Schritte in Richtung Vorschule gemacht. Ganz schön viel für ein Jahr!
+Reißverschlüsse, dein neues Bett mit Bettdecke, die ersten Schritte Richtung Vorschule... ganz schön viel für ein Jahr!
 
 *Dein Charakter in ein paar Worten*
 
-Mutig, fürsorglich und einfallsreich. Du willst schwierige Dinge ausprobieren, liest deiner Puppe Bel vor und verwandelst unser Wohnzimmer in einen Hindernisparcours. Bei neuen Menschen brauchst du manchmal erst unsere Nähe: eng an Mama oder Papa gekuschelt schaust du, bis du dich wohlfühlst. Du darfst dir diese Zeit nehmen.
+Mutig, liebevoll und voller Ideen! Du willst schwierige Dinge ausprobieren, liest deiner Puppe Bel vor und baust dir im Wohnzimmer einen Hindernisparcours. Bei neuen Menschen kuschelst du dich inzwischen lieber erst mal fest an Mama oder Papa... bis du dich wohlfühlst und es losgehen kann.
 
 *Was du liebst*
 
-Trampolinspringen steht weiterhin ganz oben. Zu Hause ist dein ehemaliges Blumenbeet als Matschküche kaum zu schlagen: Du kochst Essen und machst „ijsjes“, von denen wir natürlich probieren dürfen. Dazu kommen Schwimmen, Pfützen, Duplo-Rutschen, richtiges Eis und dein Apie Aap. Und dein geliebtes Lied „Lekker eigenwijs“ von Kinderen voor Kinderen passt zu dir!
+Deine Matschküche im ehemaligen Blumenbeet ist zu Hause weiterhin der absolute Hit. Da wird gekocht und es werden „ijsjes“ gemacht... an Verpflegung mangelt es uns also nicht :-) Dazu Trampolinspringen, Schwimmen, Pfützen, Duplo-Rutschen, richtiges Eis, dein Apie Aap und „Lekker eigenwijs“ von Kinderen voor Kinderen. Ein ziemlich passender Song für dich!
 
-Gerade liebst du Dikkie Dik, den niederländischen Kater. Sein Kuscheltier haben wir aus der Bibliothek ausgeliehen. Irgendwann muss es zurück - ich bin gespannt, wie das wird! Und „Bobby wordt grote broer“ passt wunderbar zu uns: Um den 23. Dezember 2026 erwarten wir deinen kleinen Bruder. Bald bist du selbst die Große!
+Gerade liebst du die Bücher von Dikkie Dik, dem niederländischen Kater. Den passenden „knuffel“ haben wir aus der Bibliothek ausgeliehen. Den müssen wir irgendwann zurückgeben... ich bin gespannt! Und „Bobby wordt grote broer“ lesen wir natürlich auch sehr gerne. Um den 23. Dezember 2026 erwarten wir deinen kleinen Bruder! Dann bist du selbst die große Schwester.
 
 #pagebreak()
 
 *Ein typischer Tag*
 
-Nach dem Frühstück geht es zu Miriam oder zu Zon, deiner Peuterspeelzaal. Einer von uns holt dich ab, der andere bereitet das Abendessen vor. Wir sitzen oft eine Stunde oder länger am Tisch, und danach bleibt kaum noch Zeit zum Spielen. Manchmal trifft mich das richtig: So ein normaler Arbeitstag vergeht, und wir haben so wenig Zeit miteinander verbracht.
+Morgens frühstücken wir zusammen, dann geht's zu Miriam oder zu Zon, deiner Peuterspeelzaal. Einer holt dich ab, der andere macht Abendessen. Bis wir nach einer Stunde oder mehr vom Tisch aufstehen, ist oft schon fast Schlafenszeit. Manchmal denke ich dann: Das kann doch nicht sein... wir haben dich heute kaum gesehen! Ich genieße unsere Mahlzeiten, aber ich hätte so gerne noch Zeit, einfach mit dir abzuhängen.
 
-Ich liebe unser gemeinsames Frühstück und Abendessen. Natürlich sind manche Abende auch anstrengend. Wenn du nicht zuhörst, Mama haust, Dinge auf den Tisch wirfst oder nichts essen möchtest, wünsche ich mir manchmal einfach eine unbeschwerte Stunde mit dir. Dann muss ich mich erinnern, wie müde du schon bist. Mit genügend Energie gelingt dir so vieles leichter; am Ende des Tages laufen die Gefühle manchmal einfach über. Dir dann ruhig zu helfen und Grenzen zu zeigen, gehört zu unserer Aufgabe. Das gelingt mir auch nicht immer so, wie ich es mir wünsche.
+Und ja, manchmal sind diese Abende echt anstrengend. Wenn du Mama haust, Dinge auf den Tisch wirfst oder nichts essen möchtest, fällt es mir nicht immer leicht, geduldig zu bleiben. Dabei weiß ich doch, dass du dann oft einfach völlig müde bist. Wenn noch Energie da ist, geht das alles viel leichter. Dir zu helfen, mit deinen Gefühlen umzugehen und Grenzen kennenzulernen, gehört eben auch zum Papasein... auch wenn ich manchmal lieber nur Quatsch mit dir machen würde.
 
-Zum Glück gehört zum Zubettgehen auch unser kleiner Tanz: Du flüchtest vor dem Schlafanzug aufs Bett, ich werfe mich hinterher und versuche, einen deiner Füße zu erwischen. Du kicherst, entkommst, ich versuche es wieder. So könnte das Anziehen ewig dauern :-) Danach lesen wir. Kurz vor deinem dritten Geburtstag haben wir auch nachts die Windel weggelassen, nachdem sie schon seit Monaten trocken geblieben war.
+Beim Schlafanzuganziehen schaffen wir das zum Glück trotzdem: Du flüchtest aufs Bett, ich werfe mich hinterher und erwische gerade noch einen Fuß... oder eben nicht! Du kicherst die ganze Zeit, und unser kleiner Tanz geht weiter. Sehr effizientes Zubettbringen :-D Danach wird gelesen. Und kurz vor deinem dritten Geburtstag haben wir nachts die Windel weggelassen. Die war ohnehin schon seit Monaten trocken!
 
 *Unser Foto des Jahres*
 
-Mein Lieblingsfoto von uns ist vom 26. August im Trampolinpark. Wir strahlen beide über das ganze Gesicht. Für mich steckt unsere ganze gemeinsame Energie darin. An diesem Tag wolltest du mit mir aus über zwei Metern Höhe auf ein Luftkissen springen. Du hattest Angst, und du wolltest es trotzdem versuchen. Wir haben es zusammen gemacht.
+Mein Foto des Jahres ist ganz klar das vom 26. August im Trampolinpark. Wir lachen beide über das ganze Gesicht! Du wolltest mit mir aus über zwei Metern Höhe auf ein Luftkissen springen... obwohl dir das schon Angst gemacht hat. Und dann sind wir zusammen gesprungen!
 
-Das Foto erzählt mir von deinem Vertrauen in mich und, noch viel schöner, von deinem wachsenden Vertrauen in dich selbst. Daran habe ich selbst viele Jahre arbeiten müssen. Ich möchte dir mitgeben, dass ein Versuch misslingen darf. Daran ist nichts Schlimmes. Manchmal zeigt er dir genau die Grenze, an der etwas Neues zu lernen beginnt. Du darfst ausprobieren, scheitern und es wieder versuchen. Ich wünsche dir ein Selbstvertrauen, das dich dabei trägt und dir hilft, ein starkes, selbstständiges Leben zu führen. Ich bin so wahnsinnig stolz auf dich!
+Genau das liebe ich an dem Bild: unsere Energie zusammen, dein Vertrauen in mich und vor allem dein Vertrauen in dich selbst. Das musste ich mir über viele Jahre erst erarbeiten. Ich möchte dir so gerne mitgeben, dass es völlig okay ist, wenn etwas nicht klappt! Manchmal hast du damit einfach die Grenze gefunden, an der du wirklich etwas Neues lernen kannst. Dann probierst du es eben nochmal. Ich wünsche dir, dass du dich mit diesem Selbstvertrauen auf den Weg machst und dein eigenes, selbstständiges Leben gestaltest. Ich bin so wahnsinnig stolz auf dich!
 
 *Dankbarkeit*
 
-Meinen halben Tag ganz mit dir möchte ich gegen nichts auf der Welt eintauschen. Ob im Trampolinpark oder bei Monkey Town: Ich bin so dankbar für diese Zeit, in der wir gemeinsam etwas erleben. Und ich mag es, dich auch beim Putzen und Werkeln dabeizuhaben. Zu deinem Geburtstag schenken wir dir ein Trampolin. Dafür müssen zwei Kubikmeter Erde von Hand ausgehoben werden. Offenbar kann man sich als Papa auch über ein ziemlich großes Loch freuen :-D
+Meinen halben Tag mit dir würde ich für nichts auf der Welt hergeben. Trampolinpark, Monkey Town, einfach zusammen coole Dinge machen... das ist für mich absolute Quality Time! Und ich bin auch dankbar, dass du beim Putzen und Werkeln dabei sein möchtest. Zu deinem Geburtstag gibt's ein eigenes Trampolin. Dafür muss Papa zwei Kubikmeter Erde von Hand bewegen... du bekommst das Trampolin, ich das Fitnessprogramm :-D
 
 #pagebreak()
 
 *Mama und Papa*
 
-Dieses Jahr hat uns auch als Paar gefordert. Mama hat mit ihrem Selbstvertrauen und Fragen nach beruflicher Richtung und Sinn gerungen. Oft kam sie ohne Energie nach Hause, und dann warteten Zubettbringen, Geschirr und Haushalt. In unseren „DreamTeam“-Gesprächen, die ich vorbereitet habe, suchten wir gemeinsam danach, was ihr Kraft nimmt und Freude geben könnte. Sie geht ihre Hindernisse nun mit psychologischer Unterstützung an. Das finde ich mutig.
+Für Mama und mich war dieses Jahr nicht ganz einfach. Mama hat viel darüber nachgedacht, was sie beruflich machen möchte, was ihr Sinn gibt und warum ihr oft das Selbstvertrauen fehlt. Sie kam häufig ohne Energie nach Hause... und dann warteten noch Zubettbringen, Geschirr und Aufräumen. In unseren „DreamTeam“-Gesprächen, die ich vorbereitet habe, haben wir versucht herauszufinden, was ihr fehlt, um wieder glücklicher zu sein. Jetzt geht sie diese Dinge mit psychologischer Unterstützung an. Ich finde es echt stark, dass sie sich dem stellt!
 
-Ich habe beruflich noch nie so wenig verdient und mich zugleich noch nie so zu Hause gefühlt. Mein Versuch, ein Unternehmen aufzubauen, führte mich von souveräner KI für Unternehmen zur Konzentration und Zerstörung von PFAS vor Ort. Viel Aufbruch, viel Unsicherheit. Gemeinsam haben wir auch Schulen für dich besucht und überlegt, welche Umgebung wir dir wünschen. Wie schön, diese Verantwortung mit Mama zu teilen.
+Bei mir ist es beruflich irgendwie verrückt: Noch nie habe ich so wenig verdient und mich gleichzeitig so wohl mit meiner Arbeit gefühlt! Ich versuche, ein Unternehmen aufzubauen, erst mit souveräner KI für Unternehmen, inzwischen mit der Konzentration und Zerstörung von PFAS vor Ort. Und wir haben gemeinsam Schulen für dich angeschaut und überlegt, wo du dich wohlfühlen und lernen könntest.
 
-Dabei begleitet mich etwas, das Oma Petra damals Opa Michael und mir gesagt hat: Er dürfe wieder jemanden finden und glücklich sein. Heute gehört Ulrike zu seinem Leben, und ich glaube, Oma Petra hätte sich über sein Glück gefreut. Ihr Gedanke hilft mir auch im Alltag: Selbst wenn es schwer ist, möchte ich Kraft fürs Lachen und schöne Erlebnisse aufbringen. Manchmal entsteht die Energie erst dabei. So genießen wir unser Leben schon auf dem Weg zu unseren Zielen und schöpfen Mut, etwas zum Guten zu verändern.
+Ich denke oft an etwas, das Oma Petra damals Opa Michael und mir gesagt hat: Er dürfe wieder jemanden finden und glücklich sein. Dass Ulrike heute zu seinem Leben gehört, nimmt für mich nichts von unserer Liebe zu Oma Petra weg. Auch wenn es schwierig ist, möchte ich mit euch Spaß haben und unser Leben genießen. Manchmal muss ich dafür Energie aufbringen, die ich eigentlich gar nicht habe... und hinterher geht es uns allen besser. Wir arbeiten an unseren Zielen und dürfen es uns auf dem Weg dahin schon schön machen!
 
 *Was du in mir bewegst*
 
-Als Mama zum ersten Mal eine Woche ohne dich verreist war, hast du sie sehr vermisst. Dann sagtest du: „Soms moet je huilen in het leven, maar nu ben ik weer vrolijk.“ Manchmal muss man im Leben weinen, aber jetzt bin ich wieder fröhlich. Du warst noch nicht einmal drei. Das hat mich tief berührt: Du hast deiner Traurigkeit Platz gegeben und konntest danach wieder Freude spüren.
+Als Mama zum ersten Mal eine Woche ohne dich verreist war, hast du sie sehr vermisst. Dann sagtest du: „Soms moet je huilen in het leven, maar nu ben ik weer vrolijk.“ Manchmal muss man im Leben weinen, aber jetzt bin ich wieder fröhlich. Du bist noch nicht einmal drei und sagst so etwas... das hat mich echt tief berührt!
 
-Ein paar Tage vor deinem Geburtstag lagen wir kuschelnd im Bett. Du umarmtest mich: „Ik wil dat je bij mij blijft aaaaa...“ Das „a“ wurde immer länger und lauter, fast ein Schrei. Ich dachte schon, dir täte etwas weh. Dann kam das Ende des Wortes: „...altijd!“ Für immer. Ich musste lachen und hatte Tränen in den Augen. Wie viel Liebe in so einen kleinen Satz passen kann.
+Ein paar Tage vor deinem Geburtstag lagen wir kuschelnd im Bett. Du umarmst mich und sagst: „Ik wil dat je bij mij blijft aaaaa...“ Immer länger, immer lauter! Ich dachte schon, dir tut etwas weh... bis endlich „...altijd!“ kam. Für immer. Ich musste lachen und hatte gleichzeitig Tränen in den Augen. Das werde ich so schnell nicht vergessen.
 
-Ich wünsche dir, dass du dir diese Offenheit bewahrst. Dass du weinen kannst und dich der Freude hingibst, wenn sie wiederkommt. Dass du aus eigenem Antrieb neugierig bleibst, Fragen stellst und Neues lernen möchtest. Genieße dein Leben, Felien. Koste es aus, mit allem, was dazugehört. Es ist wunderschön, dich dabei kennenzulernen.
+Behalte dir das bei, Felien: traurig sein können und dann wieder voller Freude ins Leben springen. Ich wünsche dir, dass du immer so von dir aus neugierig bleibst, Dinge verstehen und Neues lernen möchtest. Es gibt so viel zu entdecken! Genieße dein Leben in vollen Zügen, hab Spaß, lebe es!
 
 #pagebreak()
 
 *Die Menschen, die zu uns gehören*
 
-Zu deinem Jahr gehören Besuche bei Opa Michael, Oma Jolandas Garten, Opa Michaels 75. Geburtstag und unsere große Patchworkfamilie: Bonus-Oma Ulrike, Anika, Niels, Ronja und Finia.
+Zu unserem Jahr gehörten Oma Jolandas Garten, Besuche bei Opa Michael und sein 75. Geburtstag. Und natürlich unsere große Patchworkfamilie mit Bonus-Oma Ulrike, Anika, Niels, Ronja und Finia.
 
-Wie oft Oma Petra wohl hier gewesen wäre! Ich sehe sie förmlich mit dir Duplo spielen. Die Sets meiner Kindheit hat sie ordentlich in ihren Originalkartons aufbewahrt, alles für mögliche Enkelkinder. Wie gerne hätte sie sie mit dir ausgepackt und dich beim Entdecken begleitet. Sie fehlt mir sehr.
+Oft erwische ich mich bei dem Gedanken, wie sehr Oma Petra es geliebt hätte, dich jetzt zu erleben. Wie oft sie wohl hier gewesen wäre! Die Duplo-Sets meiner Kindheit hat sie ordentlich in ihren Originalkartons aufgehoben... für mögliche Enkelkinder. Ich sehe sie richtig vor mir, wie sie mit dir baut. Das hätte ich euch beiden so sehr gewünscht!
 
-Durch ihr Essen ist sie neuerdings wieder mehr bei uns. Ihr wunderbares Word-Kochbuch möchte ich dir einmal weitergeben. Unser persönlicher KI-Agent Quill hilft uns bei der wöchentlichen Essensplanung und Vorbereitung, immer mit einem Gericht von Oma Petra. Vielleicht entsteht daraus ein Kochbuch: ihre Originalrezepte, manchmal mit Fleisch, jeweils neben einer veganen, „gregorisierten“ Variante nach Dr. Greger. Mal sehen, ob ich das schaffe :-)
+Durch ihr Essen ist sie gerade wieder mehr bei uns. Sie hat ein tolles Kochbuch in Word geschrieben, das ich dir einmal weitergeben möchte. Quill, unser persönlicher KI-Agent, hilft uns jede Woche beim Mealprep, immer mit einem Rezept von Oma Petra. Vielleicht mache ich daraus noch ein Kochbuch mit ihren Originalrezepten (manchmal auch mit Fleisch) und jeweils einer veganen, „gregorisierten“ Version nach Dr. Greger. Noch so ein Papa-Projekt... mal schauen, ob ich das fertig bekomme :-)
 
-Auch Opa Edze hätte so gerne mit dir am Tisch gesessen, gezeichnet und dir die Welt erklärt. Ich habe seine Neugier und seine kenntnisreichen Kommentare immer genossen. Er kochte gerne und hätte mit Freude für dich gekocht. Wenn wir lesen, wie Bobbi Beer bei seinen Großeltern übernachtet, denke ich daran, wie sehr auch er solche Tage mit dir geliebt hätte.
+Opa Edze hätte sich bestimmt mit dir an einen Tisch gesetzt, gezeichnet und dir die Welt erklärt. Seine Neugier und seine klugen Kommentare habe ich immer sehr genossen! Er hat gerne gekocht und hätte dich bei Besuchen bestimmt mit leckerem Essen verwöhnt. Wenn wir lesen, wie Bobbi Beer bei seinen Großeltern übernachtet, denke ich daran, wie gerne auch er das mit dir erlebt hätte.
 
 *Lebensweisheit des Jahres*
 
@@ -97,11 +97,11 @@ Im Januar habe ich dir einmal erklärt, wie man fair teilt. Danach hast du deine
 
 *Ausblick auf die Zukunft*
 
-Vor uns liegen deine neue Schule, dein kleiner Bruder und so viele Gespräche! Du hilfst schon der Hebamme, deinen Bruder in Mamas Bauch zu untersuchen und danach das Gel abzuwischen. Ich freue mich darauf, dich als große Schwester zu erleben.
+Jetzt liegen deine neue Schule und das Leben als große Schwester vor dir. Du hilfst schon der Hebamme, deinen Bruder in Mamas Bauch zu untersuchen und danach das Gel abzuwischen. Ich bin so gespannt auf euch beide!
 
-Ich möchte noch viele, viele, viele großartige Erlebnisse mit dir teilen, Felien, meine Erstgeborene, meine wundervolle Tochter! Für solche Momente werde ich Reisen absagen und Arbeit liegen lassen. Unsere gemeinsame Zeit werde ich immer hüten.
+Und mit dir möchte ich noch viele, viele, viele coole Dinge erleben! Felien, meine Erstgeborene, meine großartige Tochter... für diese Momente werde ich Reisen absagen und Arbeit liegen lassen.
 
-Ich habe dich unendlich lieb.
+Ich habe dich so wahnsinnig lieb!
 
 In Liebe, \
 Dein Paps
